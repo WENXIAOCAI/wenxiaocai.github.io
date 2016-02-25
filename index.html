@@ -1,14 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>wenxiaocai</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/zepto.min.js"></script>
+    <script>
+    $(function() {
+        $('body')
+            .on('touchend', '#J_proSelector', function() {
+                $('#J-screenCover').addClass('show');
+            })
+            .on('touchend', '#J-btnSure', function() {
+                $('#J-screenCover').removeClass('show');
+            })
+            .on('click', '#J-screenCnt', function(e) {
+                e.stopPropagation();
+                console.log('stop');
+            })
+            .on('touchend', '.mask', function(e) {
+                $('#J-screenCover').removeClass('show');
+            })
+            .on('touchend', '.J-selWrap li', function(e) {
+                $(this).addClass('active').siblings().removeClass('active')
+                    .parent().parent().prev().find('.selected').html($(this).find('a').html());
+            })
+            .on('touchend', '.J-foldTrigger', function(e) {
+                var $this = $(this);
+                if (!$this.hasClass('hide')) {
+                    $this.addClass('hide').next('.J-foldCnt').hide();
+                } else {
+                    $this.removeClass('hide').next('.J-foldCnt').show();
+                }
+            })
+    })
+    </script>
 </head>
+
 <body>
-	BiuBiu~hah
-	·
-	·
-	
-	·
+    <div id="J_proSelector" class="u-selectTrigger">筛选</div>
+    <div id="J-screenCover" class="screenCover">
+        <div id="J-screenCnt" class="screenCnt">
+            <header>
+                <input id="J-btnSure" class="u-btnSure" type="button" value="确定">
+            </header>
+            <article class="bd">
+                <div class="J-foldTrigger class-primary">
+                    分类<i class="i-point"></i>
+                </div>
+                <div class="J-foldCnt">
+                    <div class="J-foldTrigger class-second hide">低压配电<i class="i-showHide"></i><span class="selected"></span></div>
+                    <div class="J-foldCnt cnt dbno">
+                        <ul class="J-selWrap">
+                            <li><a href="javascript:;">全部</a></li>
+                            <li><a href="javascript:;">按钮</a></li>
+                            <li><a href="javascript:;">微型断路器</a></li>
+                            <li><a href="javascript:;">框架断路器附件</a></li>
+                            <li><a href="javascript:;">塑壳电动机保护</a></li>
+                            <li><a href="javascript:;">微型断路器</a></li>
+                            <li><a href="javascript:;">按钮</a></li>
+                        </ul>
+                    </div>
+                    <div class="J-foldTrigger class-second hide">工业自动化<i class="i-showHide"></i><span class="selected"></span></div>
+                    <div class="J-foldCnt cnt dbno">
+                        <ul class="J-selWrap">
+                            <li><a href="javascript:;">全部</a></li>
+                            <li><a href="javascript:;">按钮</a></li>
+                            <li><a href="javascript:;">微型断路器</a></li>
+                            <li><a href="javascript:;">框架断路器附件</a></li>
+                            <li><a href="javascript:;">框架断路器附件</a></li>
+                            <li><a href="javascript:;">微型断路器</a></li>
+                            <li><a href="javascript:;">按钮</a></li>
+                        </ul>
+                    </div>
+                    <div class="J-foldTrigger class-second hide">信号与控制<i class="i-showHide"></i><span class="selected"></span></div>
+                    <div class="J-foldCnt cnt dbno">
+                        <ul class="J-selWrap">
+                            <li><a href="javascript:;">全部</a></li>
+                            <li><a href="javascript:;">按钮</a></li>
+                            <li><a href="javascript:;">微型断路器</a></li>
+                            <li><a href="javascript:;">框架断路器附件</a></li>
+                            <li><a href="javascript:;">框架断路器附件</a></li>
+                            <li><a href="javascript:;">微型断路器</a></li>
+                            <li><a href="javascript:;">按钮</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="J-foldTrigger class-primary">
+                    品牌<i class="i-point"></i><span class="selected"></span>
+                </div>
+                <div class="J-foldCnt cnt">
+                    <ul class="J-selWrap">
+                        <li><a href="javascript:;">全部</a></li>
+                        <li><a href="javascript:;">西门子</a></li>
+                        <li><a href="javascript:;">ABB</a></li>
+                        <li><a href="javascript:;">施耐德</a></li>
+                        <li><a href="javascript:;">菲尼克斯</a></li>
+                    </ul>
+                </div>
+                <div class="J-foldTrigger class-primary">
+                    系列<i class="i-point"></i><span class="selected"></span>
+                </div>
+                <div class="J-foldCnt cnt">
+                    <ul class="J-selWrap">
+                        <li><a href="javascript:;">全部</a></li>
+                        <li><a href="javascript:;">ic65n</a></li>
+                        <li><a href="javascript:;">ic65H</a></li>
+                        <li><a href="javascript:;">idPNa</a></li>
+                        <li><a href="javascript:;">idPNN</a></li>
+                        <li><a href="javascript:;">C120H</a></li>
+                        <li><a href="javascript:;">NG125H</a></li>
+                        <li><a href="javascript:;">OSMC320N</a></li>
+                        <li><a href="javascript:;">OSMC320N</a></li>
+                    </ul>
+                </div>
+                <div class="J-foldTrigger class-primary">
+                    规格<i class="i-point"></i>
+                </div>
+                <div class="J-foldCnt">
+                    <div class="J-foldTrigger class-second hide">壳架电流<i class="i-showHide"></i><span class="selected"></span></div>
+                    <div class="J-foldCnt cnt dbno">
+                        <ul class="J-selWrap">
+                            <li><a href="javascript:;">全部</a></li>
+                            <li><a href="javascript:;">1000A</a></li>
+                            <li><a href="javascript:;">522D</a></li>
+                            <li><a href="javascript:;">124A</a></li>
+                            <li><a href="javascript:;">300A</a></li>
+                            <li><a href="javascript:;">220A</a></li>
+                            <li><a href="javascript:;">100A</a></li>
+                        </ul>
+                    </div>
+                    <div class="J-foldTrigger class-second hide">分断能力<i class="i-showHide"></i><span class="selected"></span></div>
+                    <div class="J-foldCnt cnt dbno">
+                        <ul class="J-selWrap">
+                            <li><a href="javascript:;">全部</a></li>
+                            <li><a href="javascript:;">1000A</a></li>
+                            <li><a href="javascript:;">522D</a></li>
+                            <li><a href="javascript:;">124A</a></li>
+                            <li><a href="javascript:;">300A</a></li>
+                            <li><a href="javascript:;">220A</a></li>
+                            <li><a href="javascript:;">100A</a></li>
+                        </ul>
+                    </div>
+                    <div class="J-foldTrigger class-second hide">脱扣形式<i class="i-showHide"></i><span class="selected"></span></div>
+                    <div class="J-foldCnt cnt dbno">
+                        <ul class="J-selWrap">
+                            <li><a href="javascript:;">全部</a></li>
+                            <li><a href="javascript:;">1000A</a></li>
+                            <li><a href="javascript:;">522D</a></li>
+                            <li><a href="javascript:;">124A</a></li>
+                            <li><a href="javascript:;">300A</a></li>
+                            <li><a href="javascript:;">220A</a></li>
+                            <li><a href="javascript:;">100A</a></li>
+                        </ul>
+                    </div>
+                    <div class="J-foldTrigger class-second hide">额定电流<i class="i-showHide"></i><span class="selected"></span></div>
+                    <div class="J-foldCnt cnt dbno">
+                        <ul class="J-selWrap">
+                            <li><a href="javascript:;">全部</a></li>
+                            <li><a href="javascript:;">1000A</a></li>
+                            <li><a href="javascript:;">522D</a></li>
+                            <li><a href="javascript:;">124A</a></li>
+                            <li><a href="javascript:;">300A</a></li>
+                            <li><a href="javascript:;">220A</a></li>
+                            <li><a href="javascript:;">100A</a></li>
+                        </ul>
+                    </div>
+                    <div class="J-foldTrigger class-second hide">极数<i class="i-showHide"></i><span class="selected"></span></div>
+                    <div class="J-foldCnt cnt dbno">
+                        <ul class="J-selWrap">
+                            <li><a href="javascript:;">全部</a></li>
+                            <li><a href="javascript:;">1000A</a></li>
+                            <li><a href="javascript:;">522D</a></li>
+                            <li><a href="javascript:;">124A</a></li>
+                            <li><a href="javascript:;">300A</a></li>
+                            <li><a href="javascript:;">220A</a></li>
+                            <li><a href="javascript:;">100A</a></li>
+                        </ul>
+                    </div>
+                    <div class="J-foldTrigger class-second hide">安装方式<i class="i-showHide"></i><span class="selected"></span></div>
+                    <div class="J-foldCnt cnt dbno">
+                        <ul class="J-selWrap">
+                            <li><a href="javascript:;">全部</a></li>
+                            <li><a href="javascript:;">1000A</a></li>
+                            <li><a href="javascript:;">522D</a></li>
+                            <li><a href="javascript:;">124A</a></li>
+                            <li><a href="javascript:;">300A</a></li>
+                            <li><a href="javascript:;">220A</a></li>
+                            <li><a href="javascript:;">100A</a></li>
+                        </ul>
+                    </div>
+                    <div class="J-foldTrigger class-second hide">额定电压<i class="i-showHide"></i><span class="selected"></span></div>
+                    <div class="J-foldCnt cnt dbno">
+                        <ul class="J-selWrap">
+                            <li><a href="javascript:;">全部</a></li>
+                            <li><a href="javascript:;">1000A</a></li>
+                            <li><a href="javascript:;">522D</a></li>
+                            <li><a href="javascript:;">124A</a></li>
+                            <li><a href="javascript:;">300A</a></li>
+                            <li><a href="javascript:;">220A</a></li>
+                            <li><a href="javascript:;">100A</a></li>
+                        </ul>
+                    </div>
+                    <div class="J-foldTrigger class-second hide">操作方式<i class="i-showHide"></i><span class="selected"></span></div>
+                    <div class="J-foldCnt cnt dbno">
+                        <ul class="J-selWrap">
+                            <li><a href="javascript:;">全部</a></li>
+                            <li><a href="javascript:;">1000A</a></li>
+                            <li><a href="javascript:;">522D</a></li>
+                            <li><a href="javascript:;">124A</a></li>
+                            <li><a href="javascript:;">300A</a></li>
+                            <li><a href="javascript:;">220A</a></li>
+                            <li><a href="javascript:;">100A</a></li>
+                        </ul>
+                    </div>
+                    <div class="J-foldTrigger class-second hide">脱口单元<i class="i-showHide"></i><span class="selected"></span></div>
+                    <div class="J-foldCnt cnt dbno">
+                        <ul class="J-selWrap">
+                            <li><a href="javascript:;">全部</a></li>
+                            <li><a href="javascript:;">1000A</a></li>
+                            <li><a href="javascript:;">522D</a></li>
+                            <li><a href="javascript:;">124A</a></li>
+                            <li><a href="javascript:;">300A</a></li>
+                            <li><a href="javascript:;">220A</a></li>
+                            <li><a href="javascript:;">100A</a></li>
+                        </ul>
+                    </div>
+                    <div class="J-foldTrigger class-second hide">接线方式<i class="i-showHide"></i><span class="selected"></span></div>
+                    <div class="J-foldCnt cnt dbno">
+                        <ul class="J-selWrap">
+                            <li><a href="javascript:;">全部</a></li>
+                            <li><a href="javascript:;">1000A</a></li>
+                            <li><a href="javascript:;">522D</a></li>
+                            <li><a href="javascript:;">124A</a></li>
+                            <li><a href="javascript:;">300A</a></li>
+                            <li><a href="javascript:;">220A</a></li>
+                            <li><a href="javascript:;">100A</a></li>
+                        </ul>
+                    </div>
+                    <div class="J-foldTrigger class-second hide">保护功能<i class="i-showHide"></i><span class="selected"></span></div>
+                    <div class="J-foldCnt cnt dbno">
+                        <ul class="J-selWrap">
+                            <li><a href="javascript:;">全部</a></li>
+                            <li><a href="javascript:;">1000A</a></li>
+                            <li><a href="javascript:;">522D</a></li>
+                            <li><a href="javascript:;">124A</a></li>
+                            <li><a href="javascript:;">300A</a></li>
+                            <li><a href="javascript:;">220A</a></li>
+                            <li><a href="javascript:;">100A</a></li>
+                        </ul>
+                    </div>
+                    <div class="J-foldTrigger class-second hide">附件<i class="i-showHide"></i><span class="selected"></span></div>
+                    <div class="J-foldCnt cnt dbno">
+                        <ul class="J-selWrap">
+                            <li><a href="javascript:;">全部</a></li>
+                            <li><a href="javascript:;">1000A</a></li>
+                            <li><a href="javascript:;">522D</a></li>
+                            <li><a href="javascript:;">124A</a></li>
+                            <li><a href="javascript:;">300A</a></li>
+                            <li><a href="javascript:;">220A</a></li>
+                            <li><a href="javascript:;">100A</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="mask"></div>
+    </div>
 </body>
+
 </html>
