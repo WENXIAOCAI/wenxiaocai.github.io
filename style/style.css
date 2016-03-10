@@ -57,8 +57,8 @@ body{height:100%;background: url(../images/bg-main.png) repeat left top;}
 h1{
     color: #fff;
     font-size: 23px;
-    text-align: center;
-    line-height: 80px;
+    text-align: right;
+    padding: 10px;
     font-family: fantasy;
 }
 
@@ -81,7 +81,7 @@ h1{
 	top: 50%;
 	left: 50%;
 	margin: -5px 0 0 -5px;
-	/*border-radius: 50%;*/
+	border-radius: 50%;
 	background: #fff;
 	-webkit-animation: rot 10s infinite linear;
 	-o-animation: rot 10s infinite linear;
