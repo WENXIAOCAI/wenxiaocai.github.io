@@ -7,6 +7,101 @@
     <title>wenxiaocai.github.io</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/cssgram.min.css">
+    <style>
+    .cake {
+        position: fixed;
+        width: 200px;
+        left: 50%;
+        top: 50%;
+        margin: -100px 0 0 -100px;
+        z-index: 9999;
+        -webkit-animation: aicake 2s infinite linear;
+        -o-animation: aicake 2s infinite linear;
+        animation: aicake 2s infinite linear;
+    }
+    
+    .cakeTip {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        margin: 200px 0 0 -100px;
+        z-index: 9999;
+        font-size: 20px;
+        color: #fff;
+    }
+    
+    .cakeTip em {
+        -webkit-animation: aicake 5s infinite linear;
+        -o-animation: aicake 5s infinite linear;
+        animation: aicake 5s infinite linear;
+
+    }
+    .cakeTip em:nth-child(1){
+        animation-duration:1s;
+    }
+    .cakeTip em:nth-child(2){
+        animation-duration:5s;
+    }
+    .cakeTip em:nth-child(3){
+        animation-duration:4s;
+    }
+    .cakeTip em:nth-child(4){
+        animation-duration:9s;
+    }
+    .cakeTip em:nth-child(5){
+        animation-duration:1s;
+    }
+    .cakeTip em:nth-child(6){
+        animation-duration:3s;
+    }
+    .cakeTip em:nth-child(7){
+        animation-duration:1s;
+    }
+    .cakeTip em:nth-child(8){
+        animation-duration:10s;
+    }
+    .cakeTip em:nth-child(9){
+        animation-duration:18s;
+    }
+    .cakeTip em:nth-child(9){
+        animation-duration:7s;
+    }
+    .cakeTip em:nth-child(9){
+        animation-duration:6s;
+    }
+    .cakeTip em:nth-child(9){
+        animation-duration:3s;
+    }
+    .cakeTip em:nth-child(9){
+        animation-duration:7s;
+    }
+    .cakeTip em:nth-child(9){
+        animation-duration:8s;
+    }
+    @-webkit-keyframes aicake {
+        0% {
+            -webkit-transform: translate(0, -10px) rotate(-5deg);
+            -moz-transform: translate(0, -10px) rotate(-5deg);
+            -ms-transform: translate(0, -10px) rotate(-5deg);
+            -o-transform: translate(0, -10px) rotate(-5deg);
+            transform: translate(0, -10px) rotate(-5deg);
+        }
+        50% {
+            -webkit-transform: translate(0, 0) rotate(5deg);
+            -moz-transform: translate(0, 0) rotate(5deg);
+            -ms-transform: translate(0, 0) rotate(5deg);
+            -o-transform: translate(0, 0) rotate(5deg);
+            transform: translate(0, 0) rotate(5deg);
+        }
+        100% {
+            -webkit-transform: translate(0, -10px) rotate(-5deg);
+            -moz-transform: translate(0, -10px) rotate(-5deg);
+            -ms-transform: translate(0, -10px) rotate(-5deg);
+            -o-transform: translate(0, -10px) rotate(-5deg);
+            transform: translate(0, -10px) rotate(-5deg);
+        }
+    }
+    </style>
     <script src="js/jquery.js"></script>
     <script src="js/common.js"></script>
     <script>
@@ -28,13 +123,33 @@
         </div>
     </header>
     <div class="mainContent">
-    <div class="planet-big">
-        <span class="round-1"></span>
-        <span class="round-2"></span>
-        <span class="round-3"></span>
-        <span class="round-4"></span>
-        <span class="round-5"></span>
-    </div>
+        <div class="cake">
+            <img class="cake" src="images/wallhaven-139581.jpg" alt="cake" width="200" height="200">
+        </div>
+        <p class="cakeTip">
+            <em>菜</em>
+            <em>猪</em>
+            <em>头</em>
+            <em>a</em>
+            <em>a</em>
+            <em>a</em>
+            <em>a</em>
+            <em>a</em>
+            <em>a</em>
+            <em>a</em>
+            <em>a</em>
+            <em>a</em>
+            <em>a</em>
+            <em>a</em>
+        </p>
+        <!-- <div class="planet-big">
+    <span class="round-1"></span>
+    <span class="round-2"></span>
+    <span class="round-3"></span>
+    <span class="round-4"></span>
+    <span class="round-5"></span>
+</div>
+ -->
     </div>
     <div class="g-footer"></div>
     <div id="cnzz">
