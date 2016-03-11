@@ -109,57 +109,57 @@ h1{
 }
 @-webkit-keyframes rot{
 	from {
-		-webkit-transform: rotate(0deg) translate(-472px) rotate(0deg);
-		-moz-transform: rotate(0deg) translate(-472px) rotate(0deg);
-		-ms-transform: rotate(0deg) translate(-472px) rotate(0deg);
-		-o-transform: rotate(0deg) translate(-472px) rotate(0deg);
-		transform: rotate(0deg) translate(-472px) rotate(0deg);
+		-webkit-transform: rotate(0deg) translate3d(-472px,0,0) rotate(0deg);
+		-moz-transform: rotate(0deg) translate3d(-472px,0,0) rotate(0deg);
+		-ms-transform: rotate(0deg) translate3d(-472px,0,0) rotate(0deg);
+		-o-transform: rotate(0deg) translate3d(-472px,0,0) rotate(0deg);
+		transform: rotate(0deg) translate3d(-472px,0,0) rotate(0deg);
 		
 	}
 	to{
-		-webkit-transform: rotate(360deg) translate(-472px) rotate(-360deg);
-		-moz-transform: rotate(360deg) translate(-472px) rotate(-360deg);
-		-ms-transform: rotate(360deg) translate(-472px) rotate(-360deg);
-		-o-transform: rotate(360deg) translate(-472px) rotate(-360deg);
-		transform: rotate(360deg) translate(-472px) rotate(-360deg);
+		-webkit-transform: rotate(360deg) translate3d(-472px,0,0) rotate(-360deg);
+		-moz-transform: rotate(360deg) translate3d(-472px,0,0) rotate(-360deg);
+		-ms-transform: rotate(360deg) translate3d(-472px,0,0) rotate(-360deg);
+		-o-transform: rotate(360deg) translate3d(-472px,0,0) rotate(-360deg);
+		transform: rotate(360deg) translate3d(-472px,0,0) rotate(-360deg);
 		
 	}
 
 }
 @-webkit-keyframes rot-back{
 	from{
-		-webkit-transform: rotate(360deg) translate(-472px) rotate(-360deg);
-		-moz-transform: rotate(360deg) translate(-472px) rotate(-360deg);
-		-ms-transform: rotate(360deg) translate(-472px) rotate(-360deg);
-		-o-transform: rotate(360deg) translate(-472px) rotate(-360deg);
-		transform: rotate(360deg) translate(-472px) rotate(-360deg);
+		-webkit-transform: rotate(360deg) translate3d(-472px,0,0) rotate(-360deg);
+		-moz-transform: rotate(360deg) translate3d(-472px,0,0) rotate(-360deg);
+		-ms-transform: rotate(360deg) translate3d(-472px,0,0) rotate(-360deg);
+		-o-transform: rotate(360deg) translate3d(-472px,0,0) rotate(-360deg);
+		transform: rotate(360deg) translate3d(-472px,0,0) rotate(-360deg);
 		
 	}
 	to {
-		-webkit-transform: rotate(0deg) translate(-472px) rotate(0deg);
-		-moz-transform: rotate(0deg) translate(-472px) rotate(0deg);
-		-ms-transform: rotate(0deg) translate(-472px) rotate(0deg);
-		-o-transform: rotate(0deg) translate(-472px) rotate(0deg);
-		transform: rotate(0deg) translate(-472px) rotate(0deg);
+		-webkit-transform: rotate(0deg) translate3d(-472px,0,0) rotate(0deg);
+		-moz-transform: rotate(0deg) translate3d(-472px,0,0) rotate(0deg);
+		-ms-transform: rotate(0deg) translate3d(-472px,0,0) rotate(0deg);
+		-o-transform: rotate(0deg) translate3d(-472px,0,0) rotate(0deg);
+		transform: rotate(0deg) translate3d(-472px,0,0) rotate(0deg);
 		
 	}
 
 }
 @-webkit-keyframes rot-inner{
 	from {
-		-webkit-transform: rotate(0deg) translate(-437px) rotate(0deg);
-		-moz-transform: rotate(0deg) translate(-437px) rotate(0deg);
-		-ms-transform: rotate(0deg) translate(-437px) rotate(0deg);
-		-o-transform: rotate(0deg) translate(-437px) rotate(0deg);
-		transform: rotate(0deg) translate(-437px) rotate(0deg);
+		-webkit-transform: rotate(0deg) translate3d(-437px,0,0) rotate(0deg);
+		-moz-transform: rotate(0deg) translate3d(-437px,0,0) rotate(0deg);
+		-ms-transform: rotate(0deg) translate3d(-437px,0,0) rotate(0deg);
+		-o-transform: rotate(0deg) translate3d(-437px,0,0) rotate(0deg);
+		transform: rotate(0deg) translate3d(-437px,0,0) rotate(0deg);
 		
 	}
 	to{
-		-webkit-transform: rotate(360deg) translate(-437px) rotate(-360deg);
-		-moz-transform: rotate(360deg) translate(-437px) rotate(-360deg);
-		-ms-transform: rotate(360deg) translate(-437px) rotate(-360deg);
-		-o-transform: rotate(360deg) translate(-437px) rotate(-360deg);
-		transform: rotate(360deg) translate(-437px) rotate(-360deg);
+		-webkit-transform: rotate(360deg) translate3d(-437px,0,0) rotate(-360deg);
+		-moz-transform: rotate(360deg) translate3d(-437px,0,0) rotate(-360deg);
+		-ms-transform: rotate(360deg) translate3d(-437px,0,0) rotate(-360deg);
+		-o-transform: rotate(360deg) translate3d(-437px,0,0) rotate(-360deg);
+		transform: rotate(360deg) translate3d(-437px,0,0) rotate(-360deg);
 		
 	}
 
