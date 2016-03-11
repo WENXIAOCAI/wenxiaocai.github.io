@@ -21,10 +21,8 @@ a{color:inherit;}
 /* homepage */
 html{height: 100%;}
 body{height:100%;background: url(../images/bg-main.png) repeat left top;}
-#cnzz {
-    position: fixed;
-    bottom: 0;
-    right: 0;
+#cnzz_stat_icon_1257731576 {
+	display: none;
 }
 .flex {
     display: -webkit-flex;
