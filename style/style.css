@@ -48,9 +48,10 @@ body{height:100%;background: url(../images/bg-main.png) repeat left top;}
 	background-color: #f1f1f1;
 }
 /*header*/
-.btn-menu {
+.btn-subMenu {
 	color: #fff;
 	font-size: 30px;
+	padding: 10px;
 }
 h1{
     color: #fff;
@@ -59,7 +60,16 @@ h1{
     padding: 10px;
     font-family: fantasy;
 }
-
+h1 figure {    
+	display: inline-block;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+h1 figure img {
+	width: 100%;
+}
 /*container*/
 .planet-big{
 	position: relative;
