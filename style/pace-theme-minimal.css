@@ -24,12 +24,15 @@
   height: 2px;
 }*/
 
-.pace-inactive .pace-progress-inner {
-    -webkit-transform: translate3d(0, -1000px, 0);
-    -moz-transform: translate3d(0, -1000px, 0);
-    -ms-transform: translate3d(0, -1000px, 0);
-    -o-transform: translate3d(0, -1000px, 0);
-    transform: translate3d(0, -1000px, 0);
+.pace-inactive {
+    /*transform: translate3d(0, -1000px, 0);*/
+    -webkit-transform: translate3d(0,-1000px,0);
+    -moz-transform: translate3d(0,-1000px,0);
+    -ms-transform: translate3d(0,-1000px,0);
+    -o-transform: translate3d(0,-1000px,0);
+    transform: translate3d(0,-1000px,0);
+    animation-play-state: paused;
+    
 }
 
 .pace {
@@ -49,7 +52,7 @@
     z-index: 999999;
 }
 
-.pace .pace-progress-inner {
+.pace .pace-progress {
     position: fixed;
     width: 60px;
     height: 128px;
