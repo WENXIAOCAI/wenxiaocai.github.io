@@ -94,9 +94,9 @@ body {
 }
 
 .g-solution .bd ul li img {
-    -webkit-transition: linear .1s;
-    -o-transition: linear .1s;
-    transition: linear .1s;
+    -webkit-transition: linear 2s;
+    -o-transition: linear 2s;
+    transition: linear 2s;
     width: 71.27659574468085%;
     background: url(../images/bg-icon-solu.png);
     background-size: 100%;
