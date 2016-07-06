@@ -113,10 +113,10 @@ body {
 }
 
 .g-solution .bd ul li:hover .u-sign .u-bg{
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
     background: url(../images/bg-icon-soluHover.png);
     background-size: 100%;
 }
