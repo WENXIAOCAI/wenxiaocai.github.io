@@ -48,6 +48,15 @@
     </div>
     <script src="js/jquery-v1.10.2.min.js"></script>
     <script type="text/javascript">
+    function placeholderPic() {
+        var w = document.documentElement.offsetWidth;
+        document.documentElement.style.fontSize = w / 20 + 'px';
+        alert(w / 20);
+    }
+    placeholderPic();
+    window.onresize = function() {
+        placeholderPic();
+    }
     $(function() {
         $('.J-cateMore').on('click', function() {
             if ($('#J-cate').hasClass('show')) {

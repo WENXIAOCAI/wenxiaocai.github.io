@@ -28,9 +28,7 @@
             </div>
         </div>
     </div>
-        <div class="btnGameBox">
-            <a class="btn-game" href="javascript:;">开始游戏</a>
-        </div>
+        <a class="btn-game" href="javascript:;">开始游戏</a>
     <div class="g-appPic">
         <h2>应用图片</h2>
         <div class=" m-picScroll">
@@ -56,8 +54,16 @@
     </div>
     <script src="js/jquery-v1.10.2.min.js"></script>
     <script type="text/javascript">
+    function placeholderPic() {
+        var w = document.documentElement.offsetWidth;
+        document.documentElement.style.fontSize = w / 20 + 'px';
+        alert(w/20);
+    }
+    placeholderPic();
+    window.onresize = function() {
+        placeholderPic();
+    }
     $(function() {
-        console.log();
         $('.J-appPic').css('width', parseInt($('.J-appPic li').css('width')) * parseInt($('.J-appPic li').length) + 'px');
 
     });

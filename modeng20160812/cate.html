@@ -109,6 +109,17 @@
         </ul>
         <a href="javascript:;" class="more-style">查看更多作者></a>
     </div>
+    <script type="text/javascript">
+    function placeholderPic() {
+        var w = document.documentElement.offsetWidth;
+        document.documentElement.style.fontSize = w / 20 + 'px';
+        alert(w / 20);
+    }
+    placeholderPic();
+    window.onresize = function() {
+        placeholderPic();
+    }
+    </script>
 </body>
 
 </html>
