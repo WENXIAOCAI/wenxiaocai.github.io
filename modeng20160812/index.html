@@ -104,29 +104,39 @@
             </li>
             <li>
                 <a href="javascript:;">
-                <img src="images/pic2.png" alt="">
-                <div class="m-txtDes">
-                    <div class="cnt">
-                        <h2>＃健身</h2>
-                        <p>新的“传奇”从你指尖开始, 快重燃激情</p>
+                    <img src="images/pic2.png" alt="">
+                    <div class="m-txtDes">
+                        <div class="cnt">
+                            <h2>＃健身</h2>
+                            <p>新的“传奇”从你指尖开始, 快重燃激情</p>
+                        </div>
                     </div>
-                </div></a>
+                </a>
             </li>
             <li>
                 <a href="javascript:;">
-                <img src="images/pic3.png" alt="">
-                <div class="m-txtDes">
-                    <div class="cnt">
-                        <h2>约战</h2>
-                        <p>新的“传奇”从你指尖开始, 快重燃激情,走进熟悉而又新颖的 传奇世界h5之王者归来</p>
+                    <img src="images/pic3.png" alt="">
+                    <div class="m-txtDes">
+                        <div class="cnt">
+                            <h2>约战</h2>
+                            <p>新的“传奇”从你指尖开始, 快重燃激情,走进熟悉而又新颖的 传奇世界h5之王者归来</p>
+                        </div>
                     </div>
-                </div></a>
+                </a>
             </li>
         </ul>
         <a href="javascript:;" class="more-style2">加载更多...</a>
     </div>
     <script src="js/jquery-v1.10.2.min.js"></script>
     <script type="text/javascript">
+    function placeholderPic() {
+        var w = document.documentElement.offsetWidth;
+        document.documentElement.style.fontSize = w / 20 + 'px';
+    }
+    placeholderPic();
+    window.onresize = function() {
+        placeholderPic();
+    }
     $(function() {
         $('.J-cateMore').on('click', function() {
             if ($('#J-cate').hasClass('show')) {
