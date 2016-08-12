@@ -161,7 +161,17 @@ body {
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   display: -webkit-flex;     /* NEW - Chrome */
   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+        -webkit-justify-content: center;
     justify-content: center;
+        /*垂直居中*/  
+    /*老版本语法*/
+    -webkit-box-align: center; 
+    -moz-box-align: center;
+    /*混合版本语法*/
+    -ms-flex-align: center; 
+    /*新版本语法*/
+    -webkit-align-items: center;
     align-items: center;
 }
 
