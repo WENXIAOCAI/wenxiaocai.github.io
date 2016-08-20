@@ -1,21 +1,23 @@
 $(function() {
 
-    $('#J-topMenuTri').on('click', function() {
+    //顶部菜单
+    $('#J-topMenuTri').on('touchstart', function() {
         $('#J-topMenu').show();
         return false;
 
     })
-    $(document).on('click', function() {
-            $('#J-topMenu').hide();
+    $('body').on('touchstart', function() {
+        $('#J-topMenu').hide();
 
-        })
-        // 分页调用
-    $(".tcdPageCode").createPage({
-        pageCount: 5,
-        current: 1,
-        backFn: function(p) {
-            console.log(p);
-        }
-    });
+    })
 
+    // 字号
+    function placeholderPic() {
+        var w = document.documentElement.offsetWidth;
+        document.documentElement.style.fontSize = w / 20 + 'px';
+    }
+    placeholderPic();
+    window.onresize = function() {
+        placeholderPic();
+    }
 })

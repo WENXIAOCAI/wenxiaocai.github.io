@@ -7,17 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/page.css">
-    <script>
-    // 字号
-    function placeholderPic() {
-        var w = document.documentElement.offsetWidth;
-        document.documentElement.style.fontSize = w / 20 + 'px';
-    }
-    placeholderPic();
-    window.onresize = function() {
-        placeholderPic();
-    }
-    </script>
 </head>
 
 <body>
@@ -72,17 +61,7 @@
         </div>
     </div>
     <script src="js/jquery-v1.10.2.min.js"></script>
-    <script type="text/javascript">
-    $('#J-topMenuTri').on('click', function() {
-        $('#J-topMenu').show();
-        return false;
-
-    })
-    $(document).on('click', function() {
-        $('#J-topMenu').hide();
-
-    })
-    </script>
+    <script src="js/all.js"></script>
 </body>
 
 </html>
