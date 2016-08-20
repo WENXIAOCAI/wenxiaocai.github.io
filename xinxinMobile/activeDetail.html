@@ -7,17 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/page.css">
-    <script>
-    // 字号
-    function placeholderPic() {
-        var w = document.documentElement.offsetWidth;
-        document.documentElement.style.fontSize = w / 20 + 'px';
-    }
-    placeholderPic();
-    window.onresize = function() {
-        placeholderPic();
-    }
-    </script>
 </head>
 
 <body>
@@ -105,33 +94,23 @@
             </li>
             <li class="cell">
                 <a href="javascript:;"><i class="i-info"></i>
-                    <p>电话预约</p>
+                    <p>咨询</p>
                 </a>
             </li>
             <li class="cell">
                 <a href="javascript:;"><i class="i-welfare"></i>
-                    <p>在线咨询</p>
+                    <p>公益</p>
                 </a>
             </li>
             <li class="cell">
-                <a href="contact.html"><i class="i-user-l"></i>
-                    <p>联系我们</p>
+                <a href="javascript:;"><i class="i-user-l"></i>
+                    <p>我的</p>
                 </a>
             </li>
         </ul>
     </div>
     <script src="js/jquery-v1.10.2.min.js"></script>
-    <script type="text/javascript">
-    $('#J-topMenuTri').on('click', function() {
-        $('#J-topMenu').show();
-        return false;
-
-    })
-    $(document).on('click', function() {
-        $('#J-topMenu').hide();
-
-    })
-    </script>
+    <script src="js/all.js"></script>
 </body>
 
 </html>
