@@ -128,6 +128,7 @@ body{min-height:100%;overflow-x:hidden;padding-bottom:3.0625rem;box-sizing:borde
 /*基本资料维护*/
 .g-dataMan li input{color:#444;font-size:.8125rem;}
 .g-dataMan li label{display:inline-block;position:relative;min-width:4.25rem;margin-left:0;}
+.g-dataMan li label i.red{color: #ff3135;}
 .g-dataMan li input{width:auto;margin-left:0;}
 div.bg-grey{overflow:hidden;}
 

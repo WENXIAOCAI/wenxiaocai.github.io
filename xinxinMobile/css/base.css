@@ -15,6 +15,7 @@ textarea{overflow:auto;resize:none;}
 label,summary{cursor:default;}
 a,button{cursor:pointer;}
 input[type="text"],input[type="button"]{-webkit-appearance: none;border:0;}
+select{-webkit-appearance: none;}
 h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:normal;}
 del,ins,u,s,a,a:hover{text-decoration:none;}
 body,textarea,input,button,select,keygen,legend{font:12px/1.14 "Microsoft Yahei";color:#333;outline:0;}
