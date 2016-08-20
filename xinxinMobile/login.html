@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>登陆</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/page.css">
+    <script>
+    // 字号
+    function placeholderPic() {
+        var w = document.documentElement.offsetWidth;
+        document.documentElement.style.fontSize = w / 20 + 'px';
+    }
+    placeholderPic();
+    window.onresize = function() {
+        placeholderPic();
+    }
+    </script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header flex">
+        <a class="cell fixed" href="javascript:;"><i class="i-back"></i>返回</a>
+        <h1 class="cell">会员登陆</h1>
+        <div id="J-topMenuTri" class="cell fixed m-topMenu"><i class="i-menu"></i>
+            <div id="J-topMenu" class="u-topMenuwrap">
+                <ul>
+                    <li>
+                        <a href="javascript:;"><i class="i-data"></i>基本资料</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><i class="i-phone"></i>手机号绑定</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><i class="i-login"></i>登陆</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><i class="i-regist"></i>注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container g-loginBox">
+        <form action="">
+            <ul class="hd flex">
+                <li class="active cell"><a href="login.html">我要登陆</a></li>
+                <li class="cell"><a href="regist.html">我要注册</a></li>
+            </ul>
+            <div class="bd">
+                <ul>
+                    <li>
+                        <label><i class="i-user"></i></label>
+                        <input type="text" placeholder="请输入用户名">
+                    </li>
+                    <li>
+                        <label><i class="i-psw"></i></label>
+                        <input type="text" placeholder="请输入密码">
+                    </li>
+                </ul>
+            </div>
+            <div class="btnBox">
+                <input class="btn-default" type="button" value="登陆">
+                <p>
+                    <a class="regist" href="javascript:;">注册</a>
+                    <a class="resPsw" href="javascript:;">找回密码？</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    <!-- 尾部 -->
+    <div class="footer">
+        <ul class="flex">
+            <li class="cell cur">
+                <a href="index.html"><i class="i-index"></i>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="javascript:;"><i class="i-info"></i>
+                    <p>电话预约</p>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="javascript:;"><i class="i-welfare"></i>
+                    <p>在线咨询</p>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="contact.html"><i class="i-user-l"></i>
+                    <p>联系我们</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="js/jquery-v1.10.2.min.js"></script>
+    <script type="text/javascript">
+    $('#J-topMenuTri').on('click', function() {
+        $('#J-topMenu').show();
+        return false;
+
+    })
+    $(document).on('click', function() {
+        $('#J-topMenu').hide();
+
+    })
+    </script>
+</body>
+
+</html>

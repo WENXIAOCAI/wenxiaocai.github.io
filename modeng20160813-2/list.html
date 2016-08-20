@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>首页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/page.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="scroller">
+            <div class="g-subMenu flex">
+                <a href="index.html" class="cell back">返回</a>
+                <a href="javascript:;" class="cell act">推荐</a>
+            </div>
+            <div class="img-section2">
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="images/pic1.png" alt="">
+                            <div class="m-txtDes">
+                                <div class="cnt">
+                                    <h2>传奇世界h5</h2>
+                                    <p>新的“传奇”从你指尖开始, 快重燃激情,走进熟悉而又新颖的 传奇世界h5之王者归来</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="images/pic2.png" alt="">
+                            <div class="m-txtDes">
+                                <div class="cnt">
+                                    <h2>＃健身</h2>
+                                    <p>新的“传奇”从你指尖开始, 快重燃激情</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="images/pic3.png" alt="">
+                            <div class="m-txtDes">
+                                <div class="cnt">
+                                    <h2>约战</h2>
+                                    <p>新的“传奇”从你指尖开始, 快重燃激情,走进熟悉而又新颖的 传奇世界h5之王者归来</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="J-toggle" style="display:none;">
+                    <li>
+                        <a href="javascript:;">
+                            <img src="images/pic1.png" alt="">
+                            <div class="m-txtDes">
+                                <div class="cnt">
+                                    <h2>传奇世界h5</h2>
+                                    <p>新的“传奇”从你指尖开始, 快重燃激情,走进熟悉而又新颖的 传奇世界h5之王者归来</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="images/pic2.png" alt="">
+                            <div class="m-txtDes">
+                                <div class="cnt">
+                                    <h2>＃健身</h2>
+                                    <p>新的“传奇”从你指尖开始, 快重燃激情</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="images/pic3.png" alt="">
+                            <div class="m-txtDes">
+                                <div class="cnt">
+                                    <h2>约战</h2>
+                                    <p>新的“传奇”从你指尖开始, 快重燃激情,走进熟悉而又新颖的 传奇世界h5之王者归来</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <a id="pullUp" href="javascript:;" class="more-style2">下拉加载更多...</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-v1.10.2.min.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script type="text/javascript">
+    // 上拉加载
+    window.onload = loaded;
+    var myScroll;
+
+    function loaded() {
+        myScroll = new IScroll('#wrapper', {
+            tap: true,
+            click: true,
+            bounce: false
+        });
+        var isloding = false;
+        myScroll.on('scrollEnd', function() {
+            if (this.y < this.maxScrollY + 100 && !isloding) {
+                isloding = true; // 是否在加载
+                $('#pullUp').html('正在加载...');
+                setTimeout(function() {
+                    $('#J-toggle').show();
+                    myScroll.refresh();
+                }, 500);
+                // getData();//调用加载数据方法
+            }
+        });
+
+    }
+    //字号
+    function placeholderPic() {
+        var w = document.documentElement.offsetWidth;
+        document.documentElement.style.fontSize = w / 20 + 'px';
+    }
+    placeholderPic();
+    window.onresize = function() {
+        placeholderPic();
+    }
+    </script>
+</body>
+
+</html>

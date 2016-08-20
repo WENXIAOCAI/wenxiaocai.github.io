@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>医生详情</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css" />
+    <link rel="icon" href="logo.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header flex">
+        <a href="index.html" class="cell logo"><h1>成美国际</h1></a>
+        <div class="cell u-tel"><i class="i-tel"></i>400-880-3263</div>
+    </div>
+    <!-- 焦点图 -->
+    <div class="flexslider">
+        <ul class="slides">
+            <li><img src="img/banner.jpg" /></li>
+            <li><img src="img/banner.jpg" /></li>
+            <li><img src="img/banner.jpg" /></li>
+        </ul>
+    </div>
+    <article class="art-grey">
+        <!-- 医生介绍 -->
+        <section class="g-experts2">
+            <h2 class="tt-style7">布莱德•库伯医学博士</h2>
+            <p class="sub-tt"><span>作者：美国HRC</span><i></i><span>来源：原创</span><i></i><span>发布：2016-07-18</span><i></i><span>访问量：900</span></p>
+            <div>
+                <img src="img/img-experts1.png" alt="">
+                <h3>IVF首席专家</h3>
+                <dl>
+                    <dt class="tt-border">专业认证</dt>
+                    <dd>生殖内分泌与不孕症妇产科</dd>
+                    <dt class="tt-border">学术成就</dt>
+                    <dd>
+                        <p>生殖内分泌与不孕症妇产科</p>
+                        <p>生殖内分泌与不孕症妇产科</p>
+                    </dd>
+                    <dt class="tt-border">获奖荣誉</dt>
+                    <dd>
+                        <p>生殖内分泌与不孕症妇产科</p>
+                        <p>生殖内分泌与不孕症妇产科</p>
+                    </dd>
+                    <dt class="tt-border">任职经历</dt>
+                    <dd>
+                        <p>生殖内分泌与不孕症妇产科</p>
+                        <p>生殖内分泌与不孕症妇产科</p>
+                        <dt class="tt-border">专业组织</dt>
+                        <dd>生殖内分泌与不孕症妇产科</dd>
+                    </dd>
+                </dl>
+            </div>
+            <h2 class="tt-style8">医生简介</h2>
+            <div class="g-txt3 g-txt4">HRC首席不孕不育首席专家，库伯博士所带领的帕萨迪纳诊所IVF成功率居HRC之首，库伯 博士同时也是目前世界生殖医学界的前沿科技——第四代试管婴儿技术，在美国唯一得到授权的医生，库伯博士在治疗生殖健康方面有着精湛的医术和丰富的经验，并且曾赢得多项殊荣,库伯 博士在治疗不孕不育方面医术精湛,荣获洛杉矶杂志超级医生、洛杉矶卓越医生、洛杉矶时报评选的南加州最佳医生 、妇产科住院医师教学培训委员会国家教学奖 。</div>
+        </section>
+    </article>
+    <!-- 尾部 -->
+    <div class="footer">
+        <ul class="flex">
+            <li class="cell cur">
+                <a href="index.html"><i class="i-home"></i>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="javascript:;"><i class="i-phone"></i>
+                    <p>电话预约</p>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="javascript:;"><i class="i-msg"></i>
+                    <p>在线咨询</p>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="contact.html"><i class="i-contact"></i>
+                    <p>联系我们</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="js/jquery-v1.10.2.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        //全屏轮播
+        $(".flexslider").flexslider({
+            slideshowSpeed: 4000, //展示时间间隔ms
+            animationSpeed: 400, //滚动时间ms
+            touch: true, //是否支持触屏滑动
+            animation: "slide"
+        });
+
+        //nav-menu
+        var menuWidth = 0;
+        $('#J-navMenu li').each(function() {
+            menuWidth += $(this).outerWidth(true);
+        });
+        $('#J-navMenu').css('width', menuWidth + 1 + "px");
+
+    });
+    </script>
+</body>
+
+</html>

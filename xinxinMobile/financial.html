@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>财务透明</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/page.css">
+    <script>
+    // 字号
+    function placeholderPic() {
+        var w = document.documentElement.offsetWidth;
+        document.documentElement.style.fontSize = w / 20 + 'px';
+    }
+    placeholderPic();
+    window.onresize = function() {
+        placeholderPic();
+    }
+    </script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header flex">
+        <a class="cell fixed" href="javascript:;"><i class="i-back"></i>返回</a>
+        <h1 class="cell">财务透明</h1>
+        <div id="J-topMenuTri" class="cell fixed m-topMenu"><i class="i-menu"></i>
+            <div id="J-topMenu" class="u-topMenuwrap">
+                <ul>
+                    <li>
+                        <a href="javascript:;"><i class="i-data"></i>基本资料</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><i class="i-phone"></i>手机号绑定</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><i class="i-login"></i>登陆</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><i class="i-regist"></i>注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="g-financial">
+            <li class="range">
+                <label>查询范围：</label>
+                <select class="sel">
+                    <option>用户充值</option>
+                </select>
+            </li>
+            <li>
+                <label>支持对象：</label>
+                <input class="ipt" type="text" placeholder="">
+            </li>
+            <li>
+                <label>受益对象：</label>
+                <input class="ipt" type="text" placeholder="">
+            </li>
+            <li>
+                <label>受益对象：</label>
+                <input class="ipt-s" type="text" placeholder="">至
+                <input class="ipt-s" type="text" placeholder="">
+            </li>
+            <li>
+                <label>发生时间：</label>
+                <input class="ipt-s" type="text" placeholder="">至
+                <input class="ipt-s" type="text" placeholder="">
+            </li>
+            <li>
+                <label>统计结果：</label>
+                <p class="result">查询到0条条记录，合计金额0元</p>
+            </li>
+        </ul>
+        <div class="btnBox2">
+            <input class="btn-style2" type="button" name="" value="查询">
+        </div>
+        <ul class="flex g-finaRel">
+            <li class="cell"><a href="javascript:;">发生金额</a></li>
+            <li class="cell"><a href="javascript:;">受益对象</a></li>
+            <li class="cell"><a href="javascript:;">支出对象</a></li>
+        </ul>
+        <!-- 分页 -->
+        <div class="tcdPageCode"></div>
+    </div>
+    <script src="js/jquery-v1.10.2.min.js"></script>
+    <script src="js/jquery.page.js"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>

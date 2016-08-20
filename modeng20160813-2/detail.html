@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>首页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/page.css">
+</head>
+
+<body>
+    <div class="g-subMenu flex">
+        <a href="index.html" class="cell back">返回</a>
+        <a href="javascript:;" class="cell act">传奇世界H5</a>
+    </div>
+    <div class="g-imgFull">
+        <img src="images/pic1.png" alt="">
+    </div>
+    <div class="sec-detaiHd">
+        <div class="mod">
+            <div class="m-pic">
+                <img src="images/img-def.png" alt="">
+            </div>
+            <div class="cnt">
+                <h2>传奇世界h5</h2>
+                <p>新的“传奇”从你指尖开始, 快重燃激情,走进熟悉而又新颖的 《传奇世界h5之王者归来》。</p>
+            </div>
+        </div>
+    </div>
+    <div class="btnGameBox">        
+        <a class="btn-game" href="javascript:;">开始游戏</a>
+    </div>
+    <div class="g-appPic">
+        <h2>应用图片</h2>
+        <div class=" m-picScroll">
+            <ul class="J-appPic">
+                <li>
+                    <img src="images/img-def2.png" alt=""></li>
+                <li>
+                    <img src="images/img-def2.png" alt=""></li>
+                <li>
+                    <img src="images/img-def2.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class="g-desGame">
+        <dl>
+            <dt>游戏介绍</dt>
+            <dd>
+                <p>重度塔防H5游戏《皇家守卫军》目前已正式上线，与所有的H5游戏一样这款游戏也是打开即玩，无需下载，并且运行流畅，不会有卡屏、 黑屏现象。
+                </p>
+                <p>重度塔防H5游戏《皇家守卫军》国庆震撼上线</p>
+            </dd>
+        </dl>
+    </div>
+    <script src="js/jquery-v1.10.2.min.js"></script>
+    <script type="text/javascript">
+    function placeholderPic() {
+        var w = document.documentElement.offsetWidth;
+        document.documentElement.style.fontSize = w / 20 + 'px';
+    }
+    placeholderPic();
+    window.onresize = function() {
+        placeholderPic();
+    }
+    $(function() {
+        $('.J-appPic').css('width', parseInt($('.J-appPic li').css('width')) * parseInt($('.J-appPic li').length)+10+ 'px');
+
+    });
+    </script>
+</body>
+
+</html>

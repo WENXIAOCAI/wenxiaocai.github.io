@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>经典案例详情页</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css" />
+    <link rel="icon" href="logo.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header flex">
+        <a href="index.html" class="cell logo"><h1>成美国际</h1></a>
+        <div class="cell u-tel"><i class="i-tel"></i>400-880-3263</div>
+    </div>
+    <!-- 焦点图 -->
+    <div class="flexslider">
+        <ul class="slides">
+            <li><img src="img/banner.jpg" /></li>
+            <li><img src="img/banner.jpg" /></li>
+            <li><img src="img/banner.jpg" /></li>
+        </ul>
+    </div>
+    <!-- 案例详情内容 -->
+    <article class="art-grey">
+        <section class="g-genetic g-sucDetail">
+            <h2>38岁单身女性赴美试管供精成功怀孕</h2>
+            <p class="subTitle"><span>作者：美国HRC</span><i></i><span>来源：原创</span><i></i><span>发布：2016-07-18</span><i></i><span>访问量：900</span></p>
+            <p>曹女士是一个十足的女强人，无论是在事业上还是生活中都风风火火。事业上的成就致使曹女士一直奔走于繁忙的工作中，而忽略了人生的另一个重心——家庭。她在接近四十岁的年纪，依旧单身一人，看着身边的同事朋友都有了幸福的家庭，曹女士内心难免感到失落，再加上父母的一再催促，她开始寻找另一条出路。曹女士已在医疗行业工作了近十五年，作为一个新时代的独立女性，对于事物有着自己的看法，与其为了延续下一代而仓促的找个人结婚，不如利用生物医学让生命得到延续。曹女士了解到，在美国即使是单身女性也可以通过供精做试管婴儿得到自己的宝宝。曹女士选择与全美试管婴儿成功率最高的医疗机构结缘，这里无论技术还是服务，都可以为客人提供很好的帮助，对于单身女性，也并不像国内的法律条令存在任何苛刻的要求。</p>
+            <img src="img/img-sucCaseDetail1.png" alt="">
+            <img src="img/img-sucCaseDetail2.png" alt="">
+            <p>成美国际联系HRC的专家按照曹女士的要求为她选取了一个亚裔银行家的精子，与她的卵子进行结合后，有7个优质囊胚通过了PGD筛查，对于一个38岁的女性而言，这已是非常好的成绩。接下来的移植也进行得相当顺利，在十二天后，验孕棒上果真出现了让人欣喜的结果。单身妈妈更能教会孩子生命中最重要的一课——独立而强大的活着。通往幸福的路有很多条，只要心中有爱，成美国际愿作每一个客户前进的基石，陪您去领略最美的风景。 </p>
+            <img src="img/img-sucCaseDetail3.png" alt="">
+        </section>
+    </article>
+    <!-- 尾部 -->
+    <div class="footer">
+        <ul class="flex">
+            <li class="cell cur">
+                <a href="index.html"><i class="i-home"></i>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="javascript:;"><i class="i-phone"></i>
+                    <p>电话预约</p>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="javascript:;"><i class="i-msg"></i>
+                    <p>在线咨询</p>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="contact.html"><i class="i-contact"></i>
+                    <p>联系我们</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="js/jquery-v1.10.2.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        //全屏轮播
+        $(".flexslider").flexslider({
+            slideshowSpeed: 4000, //展示时间间隔ms
+            animationSpeed: 400, //滚动时间ms
+            touch: true, //是否支持触屏滑动
+            animation: "slide"
+        });
+
+        //nav-menu
+        var menuWidth = 0;
+        $('#J-navMenu li').each(function() {
+            menuWidth += $(this).outerWidth(true);
+        });
+        $('#J-navMenu').css('width', menuWidth + 1 + "px");
+
+    });
+    </script>
+</body>
+
+</html>
