@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>首页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css" />
+    <!-- <link rel="stylesheet" href="css/page.css"> -->
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <div class="siteHeader flex">
+        <h1 class="cell fixed">一品网</h1>
+        <div class="u-search cell">
+            <input class="ipt-search" type="search">
+            <i class="i-search"></i>
+        </div>
+        <div class="u-cate cell fixed">
+            <i class="i-cate"></i>
+        </div>
+    </div>
+    <div class="flexslider">
+        <div class="btnPrev"></div>
+        <div class="btnNext"></div>
+        <ul class="slides">
+            <li><img src="images/banner.png" /></li>
+            <li><img src="images/banner.png" /></li>
+        </ul>
+    </div>
+    <div class="u-luckydraw flex">
+        <span class="txt-issues cell">
+            <i class="i-clock"></i>
+            第<em>12</em>期抽奖
+        </span>
+        <span class="txt-countdown cell fixed">
+            距离开奖还有<em>01</em>天<em>01</em>时<em>01</em>分<em>01</em>秒  <i class="i-arrow"></i>
+        </span>
+    </div>
+    <div class="mainContent">
+        <div class="fastNav">
+            <ul>
+                <li>
+                    <a href="javascript:;"><i class="i-Identification"></i>鉴 定</a>
+                </li>
+                <li>
+                    <a href="javascript:;"><i class="i-auction"></i>拍 卖</a>
+                </li>
+                <li>
+                    <a href="javascript:;"><i class="i-connoisseur"></i>行 家</a>
+                </li>
+                <li>
+                    <a href="javascript:;"><i class="i-circle"></i>圈 子</a>
+                </li>
+                <li>
+                    <a href="javascript:;"><i class="i-builders"></i>匠 人</a>
+                </li>
+                <li>
+                    <a href="javascript:;"><i class="i-stuff"></i>求购代卖</a>
+                </li>
+                <li>
+                    <a href="javascript:;"><i class="i-draw"></i>抽 奖</a>
+                </li>
+                <li>
+                    <a href="javascript:;"><i class="i-something"></i>拍点玩意</a>
+                </li>
+            </ul>
+        </div>
+        <div class="hdStyle1 flex">
+            <h2 class="cell fixed">热门商品</h2>
+            <span class="line cell"></span>
+            <a class="more cell fixed" href="javascript:;">更多</a>
+        </div>
+    </div>
+    <div class="m-footMenu">
+        <ul class="flex">
+            <li class="cell active">
+                <a href="javascript:;">
+                    <i class="i-home"></i>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="javascript:;">
+                    <i class="i-msg"></i>
+                    <p>消息</p>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="javascript:;">
+                    <i class="i-public"></i>
+                    <p>发布</p>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="javascript:;">
+                    <i class="i-dynamic"></i>
+                    <p>动态</p>
+                </a>
+            </li>
+            <li class="cell">
+                <a href="javascript:;">
+                    <i class="i-user"></i>
+                    <p>我的</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="js/jquery-v1.10.2.min.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        FastClick.attach(document.body);
+        //全屏轮播
+        $(".flexslider").flexslider({
+            slideshowSpeed: 3000, //展示时间间隔ms
+            animationSpeed: 400, //滚动时间ms
+            touch: true //是否支持触屏滑动
+                // animation: "slide"
+        });
+
+    })
+    </script>
+</body>
+
+</html>
