@@ -19,7 +19,7 @@
 *********************************/
 .flexslider{position:relative;margin:0;padding:0;}
 .flexslider .slides > li{display:none;-webkit-backface-visibility:hidden;}
-.flexslider .btnPrev,.flexslider .btnNext{position:absolute;width:.875rem;height:2rem;top:50%;left:0;margin-top:-1rem;z-index:99999;background: rgba(0,0,0,.4);}
+.flexslider .btnPrev,.flexslider .btnNext{position:absolute;width:1.4rem;height:3.2rem;top:50%;left:0;margin-top:-1.6rem;z-index:99999;background: rgba(0,0,0,.4);}
 .flexslider .btnPrev:after, .flexslider .btnNext:after{
 	position: absolute;
 	content: '';
