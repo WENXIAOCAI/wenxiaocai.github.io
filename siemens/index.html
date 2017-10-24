@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>西门子活动注册</title>
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="g-doc">
+        <header>
+            <figure>
+                <img src="images/banner-siemens.jpg" alt="">
+            </figure>
+        </header>
+        <article class="g-siemensActive">
+            <div class="hd">
+                <p>填写以下信息即可参与活动</p>
+                <p>（此页面信息作为活动数据统计及礼品发放信息，请如实填写）</p>
+            </div>
+            <div class="bd">
+                <form>
+                    <ul>
+                        <li>
+                            <i class="i-com"></i>
+                            <input type="text" placeholder="请输入公司名称">
+                        </li>
+                        <li>
+                            <i class="i-acc"></i>
+                            <input type="text" placeholder="请输入商城账号">
+                        </li>
+                        <li>
+                            <i class="i-add"></i>
+                            <input type="text" placeholder="请输入收货地址">
+                        </li>
+                        <li>
+                            <i class="i-name"></i>
+                            <input type="text" placeholder="请输入收货姓名">
+                        </li>
+                        <li>
+                            <i class="i-tel"></i>
+                            <input type="text" placeholder="请输入联系电话">
+                        </li>
+                    </ul>
+                    <div class="m-btnWrap">
+                        <input class="btn-default" type="submit" value="提交资料">
+                    </div>
+                </form>
+            </div>
+        </article>
+    </div>
+    <div class="footer">
+        <a class="u-logo" href="javascript:;"><img src="images/logo.png" alt=""></a>
+        <div class="m-slogan">
+            <p>www.zydmall.com</p>
+            <p>专业电气一站式采购平台</p>
+        </div>
+    </div>
+    <script>
+    function placeholderPic() {
+        var w = document.documentElement.offsetWidth;
+        document.documentElement.style.fontSize = w / 32 + 'px';
+    }
+    placeholderPic();
+    window.onresize = function() {
+        placeholderPic();
+    }
+    </script>
+</body>
+
+</html>
