@@ -20,7 +20,7 @@ body{background:#fff;}
 a,a:hover{color:inherit;}
 img{vertical-align:middle;}
 input[type="text"],textarea{-webkit-appearance:none;border-radius:0;}
-input[type="text"],input[type="button"],input[type="submit"]{-webkit-appearance:none;outline:none;border:none;}
+input[type="text"],input[type="button"],input[type="submit"],input[type="number"]{-webkit-appearance:none;outline:none;border:none;}
 
 /*西门子活动*/
 body,html{height:100%;}
