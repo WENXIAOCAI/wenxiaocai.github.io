@@ -29,7 +29,7 @@ header figure img{width:100%;}
 .g-siemensActive .hd{color:#fff;line-height:1.4em;text-align:center;font-size:1rem;padding:1rem;background:#009999;}
 .g-siemensActive .bd{box-sizing:border-box;padding:2rem 3.8rem 3rem;}
 .g-siemensActive .bd form{width:100%;}
-.g-siemensActive .bd ul li{position:relative;height:3.2rem;box-sizing:border-box;border-bottom:1px solid #c7e3e7;}
+.g-siemensActive .bd ul li{position:relative;height:3.2rem;box-sizing:border-box;border-bottom:1px solid #56aab7;}
 .g-siemensActive .bd ul li i{display:inline-block;position:absolute;width:2rem;height:2rem;top:.6rem;left:1.4rem;background:url(../images/icon-sprite.png) no-repeat 0 0;background-size:10rem;z-index:1;}
 .g-siemensActive .bd ul li i.i-acc{background-position:-2rem 0;}
 .g-siemensActive .bd ul li i.i-add{background-position:-4rem 0;}
