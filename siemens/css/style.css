@@ -24,22 +24,48 @@ input[type="text"],input[type="button"],input[type="submit"],input[type="number"
 
 /*西门子活动*/
 body,html{height:100%;}
-.g-doc{min-height:100%;padding-bottom:12.4rem;box-sizing:border-box;}
-header figure img{width:100%;}
-.g-siemensActive .hd{color:#fff;line-height:1.4em;text-align:center;font-size:1rem;padding:1rem;background:#009999;}
-.g-siemensActive .bd{box-sizing:border-box;padding:2rem 3.8rem 3rem;}
-.g-siemensActive .bd form{width:100%;}
-.g-siemensActive .bd ul li{position:relative;height:3.2rem;box-sizing:border-box;border-bottom:1px solid #56aab7;}
-.g-siemensActive .bd ul li i{display:inline-block;position:absolute;width:2rem;height:2rem;top:.6rem;left:1.4rem;background:url(../images/icon-sprite.png) no-repeat 0 0;background-size:10rem;z-index:1;}
-.g-siemensActive .bd ul li i.i-acc{background-position:-2rem 0;}
-.g-siemensActive .bd ul li i.i-add{background-position:-4rem 0;}
-.g-siemensActive .bd ul li i.i-name{background-position:-6rem 0;}
-.g-siemensActive .bd ul li i.i-tel{background-position:-8rem 0;}
-.g-siemensActive .bd ul li input{position:absolute;width:100%;height:100%;box-sizing:border-box;font-size:1.2rem;padding:0 0 0 7.4rem;}
-.g-siemensActive .bd ul li input::-webkit-input-placeholder{color:#c7c7c7;}
-.g-siemensActive .bd .m-btnWrap{padding:0 .6rem;}
-.g-siemensActive .bd .btn-default{display:block;width:100%;color:#fff;font-size:1.2rem;padding:1rem;margin:1.8rem auto 0 auto;border-radius:5px;background:#00abb1;}
-.footer{position:relative;padding-bottom:10.6rem;margin:-12.4rem 0 0 0;text-align:right;background:url(../images/bg-footer.jpg) no-repeat 0 bottom;background-size:100%;}
-.footer .u-logo{display:inline-block;width:8.6rem;margin:0 2.6rem 0 0;}
-.footer .u-logo img{width:100%;}
-.footer .m-slogan{position:absolute;right:.6rem;bottom:.6rem;font-size:1rem;line-height:1.6em;color:#fff;}
+.g-activeDoc{min-height:100%;padding-bottom:12.4rem;box-sizing:border-box;}
+.m-siemensActive header figure img{width:100%;}
+.m-siemensActive .hd{color:#fff;line-height:1.4em;text-align:center;font-size:1rem;padding:1rem;background:#009999;}
+.m-siemensActive .bd{box-sizing:border-box;padding:2rem 3.8rem 3rem;}
+.m-siemensActive .bd form{width:100%;}
+.m-siemensActive .bd ul li{position:relative;height:3.2rem;box-sizing:border-box;border-bottom:1px solid #56aab7;}
+.m-siemensActive .bd ul li i{display:inline-block;position:absolute;width:2rem;height:2rem;top:.6rem;left:1.4rem;background:url(../images/icon-sprite.png) no-repeat 0 0;background-size:14rem;z-index:1;}
+.m-siemensActive .bd ul li i.i-acc{background-position:-2rem 0;}
+.m-siemensActive .bd ul li i.i-add{background-position:-4rem 0;}
+.m-siemensActive .bd ul li i.i-name{background-position:-6rem 0;}
+.m-siemensActive .bd ul li i.i-tel{background-position:-8rem 0;}
+.m-siemensActive .bd ul li i.i-acc-login{background-position:-10rem 0;}
+.m-siemensActive .bd ul li i.i-psw{background-position:-12rem 0;}
+.m-siemensActive .bd ul li input{position:absolute;width:100%;height:100%;box-sizing:border-box;font-size:1.2rem;padding:0 0 0 7.4rem;}
+.m-siemensActive .bd ul li input::-webkit-input-placeholder{color:#c7c7c7;}
+.m-siemensActive .bd form .m-btnWrap{padding:0 .6rem;}
+.m-btnWrap p{line-height:1.5em;font-size:1rem;margin:1.2rem 0 0 0;text-align:center;}
+.m-btnWrap p.txt-suc{color:#6d6d6d;font-size:1.2rem;margin-top:2.2rem;}
+.btn-default{display:block;width:100%;color:#fff;font-size:1.2rem;padding:1rem;margin:1.8rem auto 0 auto;border-radius:5px;background:#00abb1;}
+.footer-active{position:relative;padding-bottom:10.6rem;margin:-12.4rem 0 0 0;text-align:right;background:url(../images/bg-footer.jpg) no-repeat 0 bottom;background-size:100%;box-sizing:border-box;}
+.footer-active .u-logo{display:inline-block;width:8.6rem;margin:0 2.6rem 0 0;}
+.footer-active .u-logo img{width:100%;}
+.footer-active .m-slogan{position:absolute;right:.6rem;bottom:.6rem;font-size:1rem;line-height:1.6em;color:#fff;}
+
+/*login*/
+.g-login{color:#fff;background:#51cecf;}
+.g-activeDoc-login{padding-bottom:5.6rem;background:-webkit-linear-gradient(top,#65d5d5 0%,#1dbbbd 100%);background:linear-gradient(to bottom,#65d5d5 0%,#1dbbbd 100%);}
+.m-siemensActive-login header{padding:5rem 5.8rem 0 5.8rem;}
+.m-siemensActive-login header figure{padding:1.4rem 2rem;border-radius:5px;box-shadow:0px 3px 11px rgba(17,109,110,.2);background:#fff;}
+.m-siemensActive-login .bd{padding:0 3.8rem 1rem;}
+.m-siemensActive-login .bd ul li{margin-top:3rem;border-color:#034f50;}
+.m-siemensActive-login .bd ul li input{padding-left:4.2rem;background:transparent;}
+.m-siemensActive-login .bd ul li input::-webkit-input-placeholder{color:#fff;}
+.m-siemensActive-login .bd .btn-default{margin-top:4.8rem;background:#0c6162;background:-webkit-linear-gradient(top,#0b7377 0%,#0c6162 100%);background:linear-gradient(to bottom,#0b7377 0%,#0c6162 100%);}
+.m-siemensActive-login .bd .m-btnWrap{padding:0;}
+.g-login .footer{height:5.6rem;line-height:1.6em;text-align:center;font-size:1rem;margin:-5.6rem 0 0 0;padding:1.2rem;box-sizing:border-box;}
+
+/*提交成功*/
+.m-siemensActive-success .bd{padding:6rem 4.5rem 1rem 4.5rem;}
+.m-siemensActive-success .m-picSuc{padding:0 2rem;}
+.m-siemensActive-success .m-picSuc img{width:100%;}
+.m-siemensActive-success .btn-default{box-shadow:0 5px 13px rgba(48,209,215,.4);}
+.g-activeDoc-submitSuc{padding-bottom:15.8rem;}
+.footer-active-success{height:15.8rem;margin-top:-15.8rem;}
+.footer-active-success .u-logo{float:none;width:100%;margin:0;padding:1rem 8.6rem;box-sizing:border-box;}
