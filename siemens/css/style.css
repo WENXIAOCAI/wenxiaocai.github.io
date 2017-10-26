@@ -358,6 +358,9 @@ html {
     background: #fff;
 }
 
+.m-siemensActive-login header figure img {
+	height: 3.4rem;
+}
 .m-siemensActive-login .bd {
     padding: 0 3.8rem 1rem;
 }
