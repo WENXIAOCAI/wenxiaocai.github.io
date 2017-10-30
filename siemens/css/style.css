@@ -76,6 +76,6 @@ body,html{height:100%;}
 .m-layer.show{opacity:1;visibility:visible;}
 .m-layer .mask{position:absolute;width:100%;height:100%;left:0;top:0;background:rgba(48,48,48,.73);}
 .m-layer .mod{position:relative;width:24rem;background:#fff;margin:17rem auto;z-index:1;text-align:center;padding:2.4rem 1.2rem 1.5rem;font-size:1.2rem;color:#646464;border-radius:5px;overflow:hidden;box-sizing:border-box;}
-.m-layer .mod .hd .i-close{position:absolute;display:inline-block;width:2.8rem;height:2.8rem;line-height:2.8rem;right:-.4rem;top:-.4rem;border-radius:100%;font-size:2rem;font-weight:bold;text-align:center;color:#fff;box-sizing:border-box;background:#ccc;z-index:99;}
+.m-layer .mod .hd .i-close{position:absolute;display:inline-block;width:2.8rem;height:2.8rem;line-height:2.8rem;right:-.4rem;top:-.4rem;border-radius:100%;font-size:2.4rem;font-weight:bold;text-align:center;color:#fff;box-sizing:border-box;background:#ccc;z-index:99;}
 .m-layer .mod p{margin:.6rem 0;font-weight:bold;}
 .m-layer .mod .ft .btn{width:14rem;color:#fff;font-size:1.2rem;padding:.6rem;margin:1rem 0 0 0;border-radius:4px;background:#00abb1;}
