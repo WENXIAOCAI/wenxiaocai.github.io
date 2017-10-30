@@ -70,3 +70,12 @@ body,html{height:100%;}
 .g-activeDoc-submitSuc{padding-bottom:15.8rem;}
 .footer-active-success{height:15.8rem;margin-top:-15.8rem;}
 .footer-active-success .u-logo{float:none;width:100%;margin:0;padding:1rem 8.6rem;box-sizing:border-box;}
+
+/*confirm*/
+.m-layer{visibility:hidden;opacity:0;position:fixed;width:100%;height:100%;left:0;top:0;box-sizing:border-box;z-index:999;-webkit-transition:linear .2s;-o-transition:linear .2s;transition:linear .2s;}
+.m-layer.show{opacity:1;visibility:visible;}
+.m-layer .mask{position:absolute;width:100%;height:100%;left:0;top:0;background:rgba(48,48,48,.73);}
+.m-layer .mod{position:relative;width:24rem;background:#fff;margin:17rem auto;z-index:1;text-align:center;padding:2.4rem 1.2rem 1.2rem;font-size:1.2rem;color:#646464;border-radius:5px;overflow:hidden;box-sizing:border-box;}
+.m-layer .mod .hd .i-close{display:inline-block;width:2.8rem;height:2.8rem;line-height:2.6rem;position:absolute;right:-.4rem;top:-.4rem;border-radius:100%;font-size:2rem;font-weight:bold;text-align:center;color:#fff;box-sizing:border-box;background:#ccc;}
+.m-layer .mod p{margin:.6rem 0;font-weight:bold;}
+.m-layer .mod .ft .btn{width:14rem;color:#fff;font-size:1rem;padding:.6rem;margin:1rem 0 0 0;border-radius:4px;background:#00abb1;}

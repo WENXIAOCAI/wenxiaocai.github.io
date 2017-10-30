@@ -22,7 +22,7 @@
                 <p>（此页面信息作为活动数据统计及礼品发放信息，请如实填写）</p>
             </div>
             <div class="bd">
-                <form action="submit-success.html">
+                <form id="formSiemens" action="submit-success.html">
                     <ul>
                         <li>
                             <i class="i-com"></i>
@@ -46,7 +46,7 @@
                         </li>
                     </ul>
                     <div class="m-btnWrap">
-                        <input class="btn-default" type="submit" value="提交资料">
+                        <input id="J-btnSubmit" class="btn-default" type="submit" value="提交资料">
                     </div>
                 </form>
             </div>
@@ -59,6 +59,42 @@
             <p>专业电气一站式采购平台</p>
         </div>
     </div>
+    <!-- confirm -->
+    <div id="J-confirmLay" class="m-layer">
+        <div id="J-maskCfm" class="mask"></div>
+        <div class="mod">
+            <div class="hd"><i id="J-close" class="i-close">×</i></div>
+            <div class="bd">
+                <p>信息提交后不可修改，</p>
+                <p>是否确认提交？</p>
+            </div>
+            <div class="ft">
+                <input id="J-btnCfm" class="btn" type="button" value="确认提交">
+            </div>
+        </div>
+    </div>
+    <script>
+    window.onload = function() {
+        var submitBtn = document.getElementById("J-btnSubmit"),
+            oLayer = document.getElementById("J-confirmLay"),
+            oMaskCfm = document.getElementById("J-maskCfm"),
+            obtnCfm = document.getElementById("J-btnCfm"),
+            oClose = document.getElementById("J-close"),
+            oform = document.getElementById("formSiemens");
+        submitBtn.onclick = function(event) {
+            oLayer.classList.add('show');
+            return false;
+
+        }
+        oClose.onclick = oMaskCfm.onclick = function() {
+            oLayer.classList.remove('show');
+        }
+        obtnCfm.onclick = function() {
+            oform.submit();
+        }
+
+    }
+    </script>
 </body>
 
 </html>
