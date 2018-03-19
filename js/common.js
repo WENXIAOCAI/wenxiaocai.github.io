@@ -22,7 +22,6 @@ $(function() {
 	});
 })
 console.log(window.navigator.userAgent);
-if (browser.versions.mobile) {//判断是否是移动设备打开。browser代码在下面
         var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
         if (ua.match(/MicroMessenger/i) == "micromessenger") {
                 //在微信中打开
@@ -42,6 +41,3 @@ if (browser.versions.mobile) {//判断是否是移动设备打开。browser代�
         if(browser.versions.android){
                 //是否在安卓浏览器打开
         }
-} else {
-        //否则就是PC浏览器打开
-}
