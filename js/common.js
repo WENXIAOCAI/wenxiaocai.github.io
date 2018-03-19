@@ -22,14 +22,25 @@ $(function() {
 	});
 })
 console.log(window.navigator.userAgent);
-        var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
-console.log(ua.match(/wxwork/i));
-        if (ua.match(/MicroMessenger/i) == "micromessenger") {
-                //在微信中打开
-        }
-        if (ua.match(/WeiBo/i) == "weibo") {
-                //在新浪微博客户端打开
-        }
-        if (ua.match(/wxwork/i) == "weibo") {
-                //在新浪微博客户端打开
-        }
+userBrowser();
+function userBrowser(){  
+    var browserName=navigator.userAgent.toLowerCase();  
+    if(/msie/i.test(browserName) && !/opera/.test(browserName)){  
+        alert("IE");  
+        return ;  
+    }else if(/firefox/i.test(browserName)){  
+        alert("Firefox");  
+        return ;  
+    }else if(/chrome/i.test(browserName) && /webkit/i.test(browserName) && /mozilla/i.test(browserName)){  
+        alert("Chrome");  
+        return ;  
+    }else if(/opera/i.test(browserName)){  
+        alert("Opera");  
+        return ;  
+    }else if(/webkit/i.test(browserName) &&!(/chrome/i.test(browserName) && /webkit/i.test(browserName) && /mozilla/i.test(browserName))){  
+        alert("Safari");  
+        return ;  
+    }else{  
+        alert("unKnow");  
+    }  
+}  
