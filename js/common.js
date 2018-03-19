@@ -22,6 +22,7 @@ $(function() {
 	});
 })
 console.log(window.navigator.userAgent);
+console.log(ua.match(/wxwork/i));
         var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
         if (ua.match(/MicroMessenger/i) == "micromessenger") {
                 //在微信中打开
@@ -31,13 +32,4 @@ console.log(window.navigator.userAgent);
         }
         if (ua.match(/wxwork/i) == "weibo") {
                 //在新浪微博客户端打开
-        }
-        if (ua.match(/QQ/i) == "qq") {
-                //在QQ空间打开
-        }
-        if (browser.versions.ios) {
-                //是否在IOS浏览器打开
-        } 
-        if(browser.versions.android){
-                //是否在安卓浏览器打开
         }
