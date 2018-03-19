@@ -32,6 +32,9 @@ function userBrowser(){
     }else if(/firefox/i.test(browserName)){  
         alert("Firefox");  
         return ;  
+    }else if(/wxwork/i.test(browserName)){  
+        alert("wxwork");  
+        return ;  
     }else if(/chrome/i.test(browserName) && /webkit/i.test(browserName) && /mozilla/i.test(browserName)){  
         alert("Chrome");  
         return ;  
