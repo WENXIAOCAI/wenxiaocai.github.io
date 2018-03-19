@@ -22,8 +22,8 @@ $(function() {
 	});
 })
 console.log(window.navigator.userAgent);
-console.log(ua.match(/wxwork/i));
         var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
+console.log(ua.match(/wxwork/i));
         if (ua.match(/MicroMessenger/i) == "micromessenger") {
                 //在微信中打开
         }
