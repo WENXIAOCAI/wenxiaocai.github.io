@@ -25,6 +25,7 @@ console.log(window.navigator.userAgent);
 userBrowser();
 function userBrowser(){  
     var browserName=navigator.userAgent.toLowerCase();  
+	console.log(browserName);
     if(/msie/i.test(browserName) && !/opera/.test(browserName)){  
         alert("IE");  
         return ;  
