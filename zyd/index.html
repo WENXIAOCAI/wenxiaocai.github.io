@@ -260,8 +260,10 @@
         </div>
     </div>
     <script src="js/jquery-v1.10.2.min.js"></script>
+    <script src="js/fastclick.js"></script>
     <script src="js/idangerous.swiper.min.js"></script>
     <script type="text/javascript">
+    FastClick.attach(document.body);
     // 字号
     function placeholderPic() {
         var w = document.documentElement.offsetWidth;
@@ -289,22 +291,22 @@
         mySwiper.swipeNext()
     })
     $.fn.extend({
-    // 覆盖在某dom结构的loading动画
-    showLoading: function() {
-        var oFragmeng = document.createDocumentFragment();
-        $(oFragmeng).append('<div class="m-discountLoading"><div class="loader-inner line-scale-pulse-out"><i></i><i></i><i></i><i></i><i></i></i></div>');
-        $(this).append(oFragmeng);
-    },
-    // 移除覆盖在某dom结构的loading动画
-    removeLoading: function() {
-        $(this).find('.m-discountLoading').remove();
-    },
-    /*新功能提醒-首页通知*/
-    showPopNoticeIndex: function(cookieparameter, iExpiration) {
-        if ((new Date().getTime() > iExpiration) || getCookie(cookieparameter)) return;
-        $(this).show();
-    }
-});
+        // 覆盖在某dom结构的loading动画
+        showLoading: function() {
+            var oFragmeng = document.createDocumentFragment();
+            $(oFragmeng).append('<div class="m-discountLoading"><div class="loader-inner line-scale-pulse-out"><i></i><i></i><i></i><i></i><i></i></i></div>');
+            $(this).append(oFragmeng);
+        },
+        // 移除覆盖在某dom结构的loading动画
+        removeLoading: function() {
+            $(this).find('.m-discountLoading').remove();
+        },
+        /*新功能提醒-首页通知*/
+        showPopNoticeIndex: function(cookieparameter, iExpiration) {
+            if ((new Date().getTime() > iExpiration) || getCookie(cookieparameter)) return;
+            $(this).show();
+        }
+    });
     $(function() {
         $('body')
             .on('click', '.h5-layer-conatiner', function() {
@@ -337,7 +339,7 @@
 
 
             })
-            .on('click','#J-mbMenu',function(){
+            .on('click', '#J-mbMenu', function() {
                 $(this).toggleClass('active');
                 $('#J-mainMenu').toggleClass('active');
             })
