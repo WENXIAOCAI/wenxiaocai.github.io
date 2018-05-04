@@ -22,6 +22,7 @@ $(function() {
 	});
 })
 console.log(window.navigator.userAgent);
+/*
 userBrowser();
 function userBrowser(){  
     var browserName=navigator.userAgent.toLowerCase();  
@@ -48,3 +49,4 @@ function userBrowser(){
         alert("unKnow");  
     }  
 }  
+%/
