@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://localhost:7345/Activity_De/exam/exam_wx.aspx -->
+<html style="font-size: 57.7813px;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>
+        德力西考试
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/exam_wx.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body class="s-bg-grey g-exam" style="">
+    <img class="u-poster" src="images/poster.jpg" alt="德力西">
+    <div id="J-delixiExam">
+        <div class="g-delixiExam">
+            <div class="examPaper">
+                <div class="examTitle">
+                    <h2 id="J-examTitle">单选题</h2>
+                </div>
+                <ul id="J-examPaperA">
+                </ul>
+                <!--  <div class="examTitle">
+                            <h2>多选题</h2>
+                        </div> -->
+                <ul id="J-examPaperB">
+                </ul>
+                <input id="J-btnSubmitExam" class="btn-submitExam" type="submit" value="提交试卷">
+                <div class="ft">
+                    <div class="m-switch">
+                        <a id="J-prevQ" href="javascript:;" class="prev">上一题</a>
+                        <a id="J-nextQ" href="javascript:;" class="next">下一题</a>
+                    </div>
+                    <div id="J-progress" class="m-progressWrap">
+                        <div class="m-progress">
+                            <div class="finished"></div>
+                        </div>
+                    </div>
+                    <div class="m-exam-chance">
+                        <h3>闯关令牌：</h3>
+                        <div class="u-chance" id="J-chance">
+                            <span class="item"></span>
+                            <span class="item"></span>
+                            <span class="item"></span>
+                            <span class="item"></span>
+                            <span class="item"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--             <div class="m-examMsg">
+                <div class="mod">
+                    <img class="hourglass" src="../images/i-time.png" alt="">
+                    <div class="digits"></div>
+                </div>
+                <div id="J-examCard" class="examCard show">
+                    <div class="hd">
+                        <i id="J-toggleExamCard"></i> 答题卡
+                    </div>
+                    <div class="bd">
+                        <ul id="J-examCardList">
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+        <!-- 交卷提示 -->
+        <div id="J-layer-submitConfirm" class="J-layer g-layerWrap">
+            <div class="m-layer m-layer-2 m-layer-2-confirmExam">
+                <div class="J-layer-mask mask"></div>
+                <div class="container">
+                    <div class="bd">
+                        <p class="tt">大侠，确认提交试卷？</p>
+                        <p class="tt">提交需要消耗一枚令牌！</p>
+                    </div>
+                    <div class="btn-wrap">
+                        <input id="J-btn-confirmSublimt" class="btn" type="button" value="确定提交">
+                        <input id="J-btn-cancelSublimt" class="btn btn-blue" type="button" value="取     消">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 闯关失败提示 -->
+        <!--<div id="J-layer" class="J-layer g-layerWrap">
+                <div class="m-layer m-layer-2 m-layer-2-lose">
+                    <div class="J-layer-mask mask"></div>
+                    <div class="container">
+                        <h3><img src="images/tt-tips.png" alt=""></h3>
+                        <div class="bd">
+                            <p class="tt">抱歉大侠，闯关失败</p>
+                            <p class="txt">闯关分数</p>
+                            <p class="score">77</p>
+                            <p class="txtHistory">历史最高分：90分，当前排名：30名</p>
+                        </div>
+                        <div class="btn-wrap">
+                            <input id="J-btn-goExam" class="btn" type="button" value="再战一回，问鼎巅峰！">
+                            <input id="J-btn-cancelExam" class="btn btn-blue" type="button" value="静观其变，择日再战！">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        <!-- 闯关失败提示 -->
+        <div id="J-layer-loseExam" class="J-layer g-layerWrap">
+            <div class="m-layer m-layer-2 m-layer-2-lose">
+                <div class="J-layer-mask mask"></div>
+                <div class="container">
+                    <h3><img src="images/tt-lose.png" alt=""></h3>
+                    <div class="bd">
+                        <p class="tt">抱歉大侠，闯关失败</p>
+                        <p class="txt">闯关分数</p>
+                        <p id="J-loseScore" class="score"></p>
+                        <p class="txtHistory">历史最高分：<em></em>分，当前排名：<em></em>名</p>
+                    </div>
+                    <div class="btn-wrap">
+                        <input class="btn J-btn-goExam" type="button" value="再战一回，问鼎巅峰！">
+                        <input class="btn btn-blue J-layer-close" type="button" value="静观其变，择日再战！">
+                    </div>
+                    <img class="cow" src="images/cow-kongfu.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 闯关超时提示 -->
+        <div id="J-layer-timeout" class="J-layer g-layerWrap">
+            <div class="m-layer m-layer-2 m-layer-2-lose m-layer-2-timeout">
+                <div class="J-layer-mask mask"></div>
+                <div class="container">
+                    <h3><img src="images/tt-lose.png" alt=""></h3>
+                    <div class="bd">
+                        <p class="tt">大侠抱歉！时长耗尽！</p>
+                    </div>
+                    <div class="btn-wrap">
+                        <input class="btn J-btn-goExam" type="button" value="运气不佳，再次闯关">
+                        <input class="btn btn-blue J-layer-close" type="button" value="恢复元气，稍作休整">
+                    </div>
+                    <img class="cow" src="images/cow-kongfu.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 闯关成功提示 -->
+        <div id="J-layer-succExam" class="J-layer g-layerWrap">
+            <div class="m-layer m-layer-2 m-layer-2-succ">
+                <div class="J-layer-mask mask"></div>
+                <div class="container">
+                    <h3><img src="images/tt-score.png" alt=""></h3>
+                    <div class="bd">
+                        <p class="tt">恭喜大侠!榜上提名!</p>
+                        <p class="txt">闯关分数</p>
+                        <p id="J-succScore" class="score"></p>
+                        <p class="txtHistory">历史最高分：<em></em>分，当前排名：<em></em>名</p>
+                    </div>
+                    <div class="btn-wrap">
+                        <input class="btn J-btn-goExam" type="button" value="再战一回，问鼎巅峰！">
+                        <input class="btn btn-blue J-layer-close" type="button" value="静观其变，择日再战！">
+                    </div>
+                    <img class="cow" src="images/cow-kongfu.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    // 字号
+    function placeholderPic() {
+        var w = document.documentElement.offsetWidth;
+        document.documentElement.style.fontSize = w / 32 + 'px';
+    }
+    placeholderPic();
+    window.onresize = function() {
+        placeholderPic();
+    }
+    window.onbeforeunload = function(event) {
+        return '关闭本窗口即放弃考试！';
+    }
+
+    var fn = {
+        date: new Date(),
+        iPassed: false,
+        certUrl: '',
+        getExamPaper: function() {
+            $.ajax({
+                    url: 'ashx/question.json',
+                    type: 'GET',
+                    dataType: 'json'
+                })
+                .done(function(rst) {
+                    var result = rst;
+
+                    if (result.rsp == 'succ') {
+                        for (var t = 0, typeLen = result.res.length; t < typeLen; t++) {
+                            var resultA = result.res[t].question,
+                                oFragmeng = document.createDocumentFragment();
+                            // oFragmengC = document.createDocumentFragment();
+                            for (var i = 0, len = resultA.length; i < len; i++) {
+                                var index = (result.res[t].type == 'A') ? (i + 1) : (result.res[0].question.length + i + 1);
+
+                                var sLi = '<li id="' + index + '" data-type="' + result.res[t].type + '" class="J-question ' + (index == 1 ? 'active' : '') + '"  data-id="' + resultA[i].id + '"><p class="title"><i>' + index + '.</i>' + resultA[i].question + '</p>';
+                                for (var j = 0, aswLen = resultA[i].answer.length; j < aswLen; j++) {
+
+                                    if (result.res[t].type == 'A') {
+                                        sLi += '<label><input type="radio" name="' + resultA[i].id + '" value="' + resultA[i].answer[j].code + '"><i class="i-radio"></i>' + resultA[i].answer[j].content + '</label>';
+                                    } else if (result.res[t].type == 'B') {
+                                        sLi += '<label><input type="checkbox" name="' + resultA[i].id + '" value="' + resultA[i].answer[j].code + '"><i class="i-checkbox"></i>' + resultA[i].answer[j].content + '</label>';
+                                    }
+                                }
+                                sLi += '</li>';
+                                oFragmeng.appendChild($(sLi)[0]);
+
+                                // oFragmengC.appendChild($('<li><a href="#' + index + '">' + index + '</a></li>')[0]);
+                            }
+                            // if (result.res[t].type == 'A') {
+                            $('#J-examPaperA').append(oFragmeng);
+                            // } else {
+                            // $('#J-examPaperB').html(oFragmeng);
+                            // }
+                            // $('#J-examCardList').append(oFragmengC);
+                        }
+
+                    }
+                })
+                .fail(function() {
+                    // console.log("error");
+                })
+                .always(function() {
+                    // console.log("complete");
+                });
+
+        },
+        showCertificate: function() {
+            $('#J-getCertificate').show();
+
+        },
+        hideCertificate: function() {
+            $('#J-getCertificate').hide();
+            window.onbeforeunload = function() {};
+            window.close();
+
+        },
+        hideScore: function() {
+            if (fn.iPassed) {
+                $('#J-getScoreBox').hide();
+                fn.showCertificate();
+            } else {
+                window.onbeforeunload = function() {};
+                window.close();
+            }
+        },
+        exitExam: function() {
+            if (fn.iPassed) {
+                $('#J-getScoreBox').hide();
+                fn.showCertificate();
+            } else {
+                window.onbeforeunload = function() {};
+                window.close();
+            }
+        },
+        getScore: function(isPassed, score, change) {
+            $('#J-getScoreBox .score em').text(score);
+            $('#J-btnFinishExam').html('退出考试');
+            if (isPassed == 'Y') {
+                // $('#J-btnExamMore').hide();
+                $('#J-getScoreBox .tip').html('恭喜你，通过考试！');
+                // $('#J-btnFinishExam').text('领取证书');
+            }
+            // else {
+            $('#J-getScoreBox .times').text(change);
+            if (change <= 0) {
+                $('#J-btnExamMore').hide();
+                if (isPassed == 'Y') {
+                    $('#J-getScoreBox .tip').html('恭喜你，通过考试，已没有考试机会！');
+                } else {
+                    $('#J-getScoreBox .tip').html('很遗憾，考试失败，已没有考试机会！');
+                }
+            }
+            // }
+
+            $('#J-getScoreBox').show();
+        },
+        /*提示弹层*/
+        showCpnTip: function(msg, time) {
+            $('body').append($('<div id="J-cpnTips" class="m-cpnTip"><p class="J-tipMsg txt">' + msg + '</p></div>'));
+            // $('#J-cpnTips').find('.J-tipMsg').html(msg).end().addClass('show');
+            var iTime = time ? time : 2000;
+            setTimeout(function() {
+                $('#J-cpnTips').remove();
+            }, iTime)
+        },
+        chance: -1,
+        showExamChanceLayer: function(chance) {
+            // $('#J-level').text(fn.level);
+            $('#J-chance .item').each(function(i) {
+                if (i < chance) {
+                    $(this).addClass('active');
+                } else {
+
+                    $(this).removeClass('active');
+                }
+
+            })
+        },
+        iAbled: false,
+        iHasExamChance: function() {
+            $.ajax({
+                    url: 'ashx/ifabled.json',
+                    type: 'GET',
+                    async: false,
+                    //dataType: 'json'
+                })
+                .done(function(rst) {
+                    var result = rst;
+                    if (result.rsp == "succ") {
+
+                        if (result.abled != 'N') {
+                            fn.showCpnTip(result.res, 50000);
+                            fn.iAbled = false;
+
+                        } else {
+                            fn.iAbled = true;
+                            fn.chance = result.chance;
+                            fn.showExamChanceLayer(fn.chance);
+
+                        }
+                    } else {
+                        fn.showCpnTip(result.res, 50000);
+                    }
+                })
+
+        },
+        download: function(url) {
+            $.ajax({
+                    url: 'ashx/download.ashx',
+                    type: 'GET',
+                    // dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
+                    data: { fileurl: url },
+                })
+                .done(function(rst) {
+                    $('#J-btnDownCert').attr('href', rst);
+                })
+                .fail(function() {
+                    console.log("error");
+                })
+                .always(function() {
+                    console.log("complete");
+                });
+
+        },
+        caleProgress: function() {
+            $('#J-progress .finished').css('width', $('#J-examCard .active').length / 50 * 100 + '%');
+        },
+        loseExam: function(result) {
+            $('#J-loseScore').text(result.point);
+            $('#J-layer-loseExam').addClass('show');
+
+        },
+        succExam: function(result) {
+            $('#J-succScore').text(result.point);
+            $('#J-layer-succExam').addClass('show');
+
+        },
+        checkanswer: function() {
+
+            var oData = {
+                // date: fn.date.getFullYear() + '-' + (fn.date.getMonth() + 1) + '-' + fn.date.getDate() + ' ' + fn.date.toLocaleTimeString().slice(2),
+                date: new Date().getTime(),
+                time: ((new Date().getTime() - fn.date.getTime()) / (60 * 1000)).toFixed(2),
+                answer: []
+            }
+            $('.J-question').each(function() {
+                var $this = $(this),
+                    oId = $this.attr('data-id'),
+                    oAnswer = {
+                        id: oId,
+                        answer: ''
+                    },
+                    aInput = $('input[name="' + oId + '"]');
+                for (var i = 0, len = aInput.length; i < len; i++) {
+                    if (aInput[i].checked) {
+                        oAnswer['answer'] += aInput[i].value;
+                    }
+                }
+
+                if (!oAnswer.answer) {
+                    oAnswer.answer = ' ';
+                }
+                oData.answer.push(oAnswer);
+            })
+            $.ajax({
+                    url: 'ashx/checkanswer.json',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: { exampaper: JSON.stringify(oData) },
+                })
+                .done(function(rst) {
+                    var result = rst;
+                    if (result.rsp == 'succ') {
+                        if (result.passed == 'N') {
+                            fn.loseExam(result);
+                        } else {
+                            fn.succExam(result);
+                        }
+                        // fn.getScore(result.passed, result.point, result.chance);
+                        // if (result.passed == 'Y') {
+                        //     fn.iPassed = true;
+                        //     fn.certUrl = result.passimg;
+                        //     $('#J-btnDownCert').attr({'href': result.passimg,'download': result.passimg});
+                        //     $('#J-certificate').attr('src', result.passimg);
+                        // }
+                    } else {
+                        fn.showCpnTip(result.res, 1200);
+                    }
+
+                })
+                .fail(function() {
+                    // console.log("error");
+                })
+                .always(function() {
+                    // console.log("complete");
+                });
+
+        },
+        setQtitle: function(type) {
+            if (type == 'A') {
+                $('#J-examTitle').text('单选题');
+            } else {
+                $('#J-examTitle').text('多选题');
+
+            }
+
+        }
+    }
+
+    $(function() {
+        var progressWidth = $('#J-progress').width();
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 800) {
+                if (!$('#J-progress').hasClass('fixed')) {
+
+                    $('#J-progress').addClass('fixed').find('.m-progress').css('width', progressWidth + 'px');
+                }
+            } else {
+
+                $('#J-progress').removeClass('fixed');
+            }
+        })
+
+        fn.iHasExamChance();
+        if (!fn.iAbled) {
+            $('#J-delixiExam').html('');
+            return;
+        }
+        fn.getExamPaper();
+        // $(".digits").countdown({
+        //     image: "images/digits.png",
+        //     format: "mm:ss",
+        //     startTime: "30:00",
+        //     timerEnd: function() {
+        //         $('#J-layer-timeout').addClass('show');
+        //     }
+        // });
+        $('#J-delixiExam')
+            .on('click', '#J-prevQ', function() {
+                if ($('#J-examPaperA li.active').index() == 0) return;
+                $('#J-examPaperA li.active').removeClass('active').prev('').addClass('active');
+                fn.setQtitle($('#J-examPaperA li.active').attr('data-type'));
+            })
+            .on('click', '#J-nextQ', function() {
+                if ($('#J-examPaperA li.active').index() >= $('#J-examPaperA li').length - 1) return;
+                $('#J-examPaperA li.active').removeClass('active').next('').addClass('active');
+                fn.setQtitle($('#J-examPaperA li.active').attr('data-type'));
+
+            })
+            .on('click', '#J-toggleExamCard', function() {
+                $('#J-examCard').toggleClass('show');
+                $(this).toggleClass('show');
+            })
+            .on('click', '#J-examPaperA label', function() {
+                $(this).addClass('active').siblings('label').removeClass('active');
+                var oIndex = $(this).parent('li').index();
+                $('#J-examCard li').eq(oIndex).addClass('active');
+                fn.caleProgress();
+            })
+            .on('click', '#J-examPaperB label', function(event) {
+                if ($(this).find('input').prop('checked')) {
+                    $(this).addClass('active');
+                } else {
+                    $(this).removeClass('active');
+                }
+                var oIndex = $('#J-examPaperA li').length + $(this).parent('li').index();
+                if ($(this).parents('li').find('.active').length > 0) {
+                    $('#J-examCard li').eq(oIndex).addClass('active');
+                } else {
+                    $('#J-examCard li').eq(oIndex).removeClass('active');
+                }
+                fn.caleProgress();
+
+            })
+            // 点击遮罩层关闭弹窗
+            .on('click', '.J-layer-mask,#J-btn-cancelSublimt,.J-layer-close', function() {
+                $(this).parents('.J-layer').removeClass('show');
+
+            })
+            // 交卷按钮
+            .on('click', '#J-btn-confirmSublimt', function() {
+
+                //关闭确认弹层
+                $('#J-layer-submitConfirm').removeClass('show');
+                fn.checkanswer();
+            })
+            .on('click', '#J-btnSubmitExam', function() {
+                $('#J-layer-submitConfirm').addClass('show');
+
+            })
+            .on('click', '#J-btnFinishExam', function() {
+                fn.exitExam();
+            })
+            .on('click', '.J-fileDownload', function() {
+                window.onbeforeunload = function() {};
+            })
+            .on('click', '#J-btnHideCert', function() {
+                fn.hideCertificate();
+            })
+            //刷新界面重弄新进入考试 
+            .on('click', '#J-btnExamMore,.J-btn-goExam', function() {
+                window.onbeforeunload = function() {};
+                window.location.reload();
+            })
+            .on('click', '#J-examCard li a', function() {
+                var $root = $('html, body');
+                $root.animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                }, 1000);
+                return false;
+            })
+    });
+    </script>
+</body>
+
+</html>

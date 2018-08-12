@@ -1,0 +1,1012 @@
+{
+    "rsp": "succ",
+    "msg": "请求成功",
+    "num": 2,
+    "res": [
+    {
+        "type": "A",
+        "question": [
+        {
+            "id": 26,
+            "question": "3RV6/3RV5 系列断路器的接线方式 ",
+            "answer": [
+            {
+                "code": "A",
+                "content": "顶部进线"
+            },
+            {
+                "code": "B",
+                "content": "底部进线"
+            },
+            {
+                "code": "C",
+                "content": "顶部或者底部进线都可以"
+            }]
+        },
+        {
+            "id": 13,
+            "question": "5SY7…CC系列小型断路器最大分断能力为",
+            "answer": [
+            {
+                "code": "A",
+                "content": "15KA"
+            },
+            {
+                "code": "B",
+                "content": "25KA"
+            },
+            {
+                "code": "C",
+                "content": "30KA"
+            },
+            {
+                "code": "D",
+                "content": "50KA"
+            }]
+        },
+        {
+            "id": 12,
+            "question": "西门子小型断路器端子类型是",
+            "answer": [
+            {
+                "code": "A",
+                "content": "隧道式端子"
+            },
+            {
+                "code": "B",
+                "content": "压板提升式端子"
+            },
+            {
+                "code": "C",
+                "content": "插拔端子"
+            }]
+        },
+        {
+            "id": 4,
+            "question": "西门子5SN4 1P+N C16产品对应的产品订货号是：",
+            "answer": [
+            {
+                "code": "A",
+                "content": "5SN41167CN"
+            },
+            {
+                "code": "B",
+                "content": "5SN64167CN"
+            },
+            {
+                "code": "C",
+                "content": "5SN63167CN"
+            },
+            {
+                "code": "D",
+                "content": "5SN45167CN"
+            }]
+        },
+        {
+            "id": 19,
+            "question": "3NA普通熔断器的额定电压是",
+            "answer": [
+            {
+                "code": "A",
+                "content": "220V AC"
+            },
+            {
+                "code": "B",
+                "content": "380V AC"
+            },
+            {
+                "code": "C",
+                "content": "440V AC"
+            },
+            {
+                "code": "D",
+                "content": "500V AC"
+            }]
+        },
+        {
+            "id": 14,
+            "question": "5SY7…CC系列小型断路器高分断体积小的优势，基本模数为",
+            "answer": [
+            {
+                "code": "A",
+                "content": "1模数"
+            },
+            {
+                "code": "B",
+                "content": "1.5模数"
+            },
+            {
+                "code": "C",
+                "content": "2模数"
+            },
+            {
+                "code": "D",
+                "content": "2.5模数"
+            }]
+        },
+        {
+            "id": 40,
+            "question": "下面哪个是西门子国产经济型接触器：",
+            "answer": [
+            {
+                "code": "A",
+                "content": "3RT1"
+            },
+            {
+                "code": "B",
+                "content": "3RT5"
+            },
+            {
+                "code": "C",
+                "content": "3TF4"
+            },
+            {
+                "code": "D",
+                "content": "3TS4"
+            }]
+        },
+        {
+            "id": 30,
+            "question": "SIRIUS国产3RT6 有哪几种尺寸规格",
+            "answer": [
+            {
+                "code": "A",
+                "content": "S00 , S0     "
+            },
+            {
+                "code": "B",
+                "content": "S00 , S0 , S1  "
+            },
+            {
+                "code": "C",
+                "content": "S00 , S0 , S2, S3  "
+            },
+            {
+                "code": "D",
+                "content": "S00 , S2"
+            }]
+        },
+        {
+            "id": 27,
+            "question": "3RV60/3RV50 系列断路器可加装的辅助触点 ",
+            "answer": [
+            {
+                "code": "A",
+                "content": "1个横向的    "
+            },
+            {
+                "code": "B",
+                "content": "一个侧装的"
+            },
+            {
+                "code": "C",
+                "content": "一个横向的和一个侧装的"
+            }]
+        },
+        {
+            "id": 32,
+            "question": "SIRIUS国产3RH6中间继电器本体包含几个触点",
+            "answer": [
+            {
+                "code": "A",
+                "content": "4"
+            },
+            {
+                "code": "B",
+                "content": "8"
+            },
+            {
+                "code": "C",
+                "content": "6"
+            },
+            {
+                "code": "D",
+                "content": "1"
+            }]
+        },
+        {
+            "id": 2,
+            "question": "施耐德E9系列微断相对应的首选西门子微断系列是：",
+            "answer": [
+            {
+                "code": "A",
+                "content": "5SY"
+            },
+            {
+                "code": "B",
+                "content": "5SN"
+            },
+            {
+                "code": "C",
+                "content": "5SL"
+            },
+            {
+                "code": "D",
+                "content": "5SJ"
+            }]
+        },
+        {
+            "id": 11,
+            "question": "标准型直流小型断路器优先选择？",
+            "answer": [
+            {
+                "code": "A",
+                "content": "5SY6…CC"
+            },
+            {
+                "code": "B",
+                "content": "5SY4…CC"
+            },
+            {
+                "code": "C",
+                "content": "5SY7…CC"
+            },
+            {
+                "code": "D",
+                "content": "5SY5…CC"
+            }]
+        },
+        {
+            "id": 8,
+            "question": "5SY4系列小型断路器分断能力是？",
+            "answer": [
+            {
+                "code": "A",
+                "content": "IEC898 10KA"
+            },
+            {
+                "code": "B",
+                "content": "IEC947 10KA"
+            },
+            {
+                "code": "C",
+                "content": "IEC898 4.5KA"
+            },
+            {
+                "code": "D",
+                "content": "IEC947 6KA"
+            }]
+        },
+        {
+            "id": 47,
+            "question": "西门子低压产品服务热线如何拨打",
+            "answer": [
+            {
+                "code": "A",
+                "content": "4008104288-1-2"
+            },
+            {
+                "code": "B",
+                "content": "4008104288-1-5"
+            },
+            {
+                "code": "C",
+                "content": "4008104282-1-5"
+            },
+            {
+                "code": "D",
+                "content": "4008104282-1-2"
+            }]
+        },
+        {
+            "id": 29,
+            "question": "3RT60/3RT50 系列S0 规格接触器本体集成几个辅助触点",
+            "answer": [
+            {
+                "code": "A",
+                "content": "1个"
+            },
+            {
+                "code": "B",
+                "content": "2个"
+            },
+            {
+                "code": "C",
+                "content": "无"
+            },
+            {
+                "code": "D",
+                "content": "4个"
+            }]
+        },
+        {
+            "id": 21,
+            "question": "RCBO是指",
+            "answer": [
+            {
+                "code": "A",
+                "content": "带过电流保护剩余电流保护断路器"
+            },
+            {
+                "code": "B",
+                "content": "剩余电流保护器"
+            },
+            {
+                "code": "C",
+                "content": "小型断路器"
+            }]
+        },
+        {
+            "id": 9,
+            "question": "5SP4系列小型断路器额定电流范围是？",
+            "answer": [
+            {
+                "code": "A",
+                "content": "80-125A"
+            },
+            {
+                "code": "B",
+                "content": "3-100A"
+            },
+            {
+                "code": "C",
+                "content": "3-63A"
+            },
+            {
+                "code": "D",
+                "content": "3-80A"
+            }]
+        },
+        {
+            "id": 5,
+            "question": "西门子最新的户内箱系列是：",
+            "answer": [
+            {
+                "code": "A",
+                "content": "Simbox  PS"
+            },
+            {
+                "code": "B",
+                "content": "Simbox  63"
+            },
+            {
+                "code": "C",
+                "content": "Simbox  MB"
+            }]
+        },
+        {
+            "id": 35,
+            "question": "每个断路器可加装几个辅助触点？",
+            "answer": [
+            {
+                "code": "A",
+                "content": "一个横装和一个侧装辅助触点"
+            },
+            {
+                "code": "B",
+                "content": "两个侧装辅助触点"
+            },
+            {
+                "code": "C",
+                "content": "两个横装辅助触点"
+            },
+            {
+                "code": "D",
+                "content": "无限扩展"
+            }]
+        },
+        {
+            "id": 31,
+            "question": "SIRIUS国产3RT6 采用那种接线端子",
+            "answer": [
+            {
+                "code": "A",
+                "content": "螺钉式"
+            },
+            {
+                "code": "B",
+                "content": "弹簧式"
+            },
+            {
+                "code": "C",
+                "content": "环形接线端子 "
+            },
+            {
+                "code": "D",
+                "content": "螺钉和弹簧式"
+            }]
+        },
+        {
+            "id": 18,
+            "question": "西门子电涌保护器的系列名称是",
+            "answer": [
+            {
+                "code": "A",
+                "content": "5SD7"
+            },
+            {
+                "code": "B",
+                "content": "5TR"
+            },
+            {
+                "code": "C",
+                "content": "5SJ5"
+            },
+            {
+                "code": "D",
+                "content": "5TE8"
+            }]
+        },
+        {
+            "id": 48,
+            "question": "西门子3TF系列产品退市需要用哪款产品替换",
+            "answer": [
+            {
+                "code": "A",
+                "content": "3TB"
+            },
+            {
+                "code": "B",
+                "content": "3RT1/2"
+            },
+            {
+                "code": "C",
+                "content": "3TS"
+            },
+            {
+                "code": "D",
+                "content": "3RT5/6"
+            }]
+        },
+        {
+            "id": 38,
+            "question": "S6规格的接触器配合目前使用那种型号的热继电器？",
+            "answer": [
+            {
+                "code": "A",
+                "content": "3RU61"
+            },
+            {
+                "code": "B",
+                "content": "3RU51 "
+            },
+            {
+                "code": "C",
+                "content": "3UA62"
+            },
+            {
+                "code": "D",
+                "content": "3RV61"
+            }]
+        },
+        {
+            "id": 20,
+            "question": "RCD是指",
+            "answer": [
+            {
+                "code": "A",
+                "content": "剩余电流保护断路器"
+            },
+            {
+                "code": "B",
+                "content": "剩余电流保护器"
+            },
+            {
+                "code": "C",
+                "content": "小型断路器"
+            }]
+        },
+        {
+            "id": 6,
+            "question": "西门子小型断路器的单位模数宽度是？",
+            "answer": [
+            {
+                "code": "A",
+                "content": "9mm"
+            },
+            {
+                "code": "B",
+                "content": "14mm"
+            },
+            {
+                "code": "C",
+                "content": "18mm"
+            },
+            {
+                "code": "D",
+                "content": "22mm"
+            }]
+        },
+        {
+            "id": 41,
+            "question": "下面哪个型号代表热继电器：",
+            "answer": [
+            {
+                "code": "A",
+                "content": "3RH"
+            },
+            {
+                "code": "B",
+                "content": "3RT"
+            },
+            {
+                "code": "C",
+                "content": "3RV"
+            },
+            {
+                "code": "D",
+                "content": "3RU"
+            }]
+        },
+        {
+            "id": 46,
+            "question": "下面哪款西门子按钮对应施耐德XB2系列按钮？",
+            "answer": [
+            {
+                "code": "A",
+                "content": "3SU1"
+            },
+            {
+                "code": "B",
+                "content": "3SB3"
+            },
+            {
+                "code": "C",
+                "content": "3SB6"
+            },
+            {
+                "code": "D",
+                "content": "3SK1"
+            }]
+        },
+        {
+            "id": 17,
+            "question": "SPD的中文名称是",
+            "answer": [
+            {
+                "code": "A",
+                "content": "电涌保护器"
+            },
+            {
+                "code": "B",
+                "content": "过电压保护模块"
+            },
+            {
+                "code": "C",
+                "content": "过电流保护器"
+            }]
+        },
+        {
+            "id": 3,
+            "question": "西门子5SY65207CC产品对应的产品型号是：",
+            "answer": [
+            {
+                "code": "A",
+                "content": "5SY6 1P+N C20"
+            },
+            {
+                "code": "B",
+                "content": "5SY6 1P C20"
+            },
+            {
+                "code": "C",
+                "content": "5SY6 1P+N C10"
+            },
+            {
+                "code": "D",
+                "content": "5SY6 1P C10"
+            }]
+        },
+        {
+            "id": 37,
+            "question": "国产3RH系列是否提供弹簧式接线方式？",
+            "answer": [
+            {
+                "code": "A",
+                "content": "可以"
+            },
+            {
+                "code": "B",
+                "content": "不可以"
+            }]
+        },
+        {
+            "id": 7,
+            "question": "5SY系列小型断路器额定电流范围是？",
+            "answer": [
+            {
+                "code": "A",
+                "content": "0.3-80A"
+            },
+            {
+                "code": "B",
+                "content": "0.3-63A"
+            },
+            {
+                "code": "C",
+                "content": "0.3-40A"
+            },
+            {
+                "code": "D",
+                "content": "0.3-32A"
+            }]
+        },
+        {
+            "id": 33,
+            "question": "国产3RH6中间继电器通过加辅助触点块最多拓展至几个触点",
+            "answer": [
+            {
+                "code": "A",
+                "content": "4"
+            },
+            {
+                "code": "B",
+                "content": "8"
+            },
+            {
+                "code": "C",
+                "content": "6"
+            },
+            {
+                "code": "D",
+                "content": "1"
+            }]
+        },
+        {
+            "id": 39,
+            "question": "下面哪个是西门子最新一代国产接触器：",
+            "answer": [
+            {
+                "code": "A",
+                "content": "3TF68"
+            },
+            {
+                "code": "B",
+                "content": "3RT2"
+            },
+            {
+                "code": "C",
+                "content": "3RT1"
+            },
+            {
+                "code": "D",
+                "content": "3RT5/6"
+            }]
+        },
+        {
+            "id": 1,
+            "question": "施耐德A9系列微断相对应的首选西门子微断系列是：",
+            "answer": [
+            {
+                "code": "A",
+                "content": "5SY"
+            },
+            {
+                "code": "B",
+                "content": "5SN"
+            },
+            {
+                "code": "C",
+                "content": "5SL"
+            },
+            {
+                "code": "D",
+                "content": "5SJ"
+            }]
+        },
+        {
+            "id": 36,
+            "question": "3RT系列接触器主回路的螺钉在出厂时是？",
+            "answer": [
+            {
+                "code": "A",
+                "content": "松开的"
+            },
+            {
+                "code": "B",
+                "content": "拧紧的"
+            },
+            {
+                "code": "C",
+                "content": "随意状态"
+            },
+            {
+                "code": "D",
+                "content": "无螺钉"
+            }]
+        },
+        {
+            "id": 45,
+            "question": "下面那款按钮是西门子最新一代高端按钮：",
+            "answer": [
+            {
+                "code": "A",
+                "content": "3SU1"
+            },
+            {
+                "code": "B",
+                "content": "3SB3"
+            },
+            {
+                "code": "C",
+                "content": "3SB6"
+            },
+            {
+                "code": "D",
+                "content": "3SK1"
+            }]
+        },
+        {
+            "id": 43,
+            "question": "下面西门子哪个产品系列对应施耐德LC1N系列：",
+            "answer": [
+            {
+                "code": "A",
+                "content": "3TB"
+            },
+            {
+                "code": "B",
+                "content": "3RT2"
+            },
+            {
+                "code": "C",
+                "content": "3TS"
+            },
+            {
+                "code": "D",
+                "content": "3RT5/6"
+            }]
+        },
+        {
+            "id": 28,
+            "question": "3RT60/3RT50 系列SIRIUS国产接触器最大至",
+            "answer": [
+            {
+                "code": "A",
+                "content": "250kW  "
+            },
+            {
+                "code": "B",
+                "content": "300 kW  "
+            },
+            {
+                "code": "C",
+                "content": "750kW "
+            },
+            {
+                "code": "D",
+                "content": "200 kW"
+            }]
+        },
+        {
+            "id": 15,
+            "question": "5SY…CC小型断路器显示窗口显示红色表示含义?",
+            "answer": [
+            {
+                "code": "A",
+                "content": "开关由于故障脱扣跳闸"
+            },
+            {
+                "code": "B",
+                "content": "开关处于工作状态，触头闭合"
+            },
+            {
+                "code": "C",
+                "content": "开关分断     "
+            }]
+        },
+        {
+            "id": 34,
+            "question": "3RV6/3RV5 系列断路器是否可以作为主开关和急停开关？",
+            "answer": [
+            {
+                "code": "A",
+                "content": "可以"
+            },
+            {
+                "code": "B",
+                "content": "不可以"
+            }]
+        },
+        {
+            "id": 42,
+            "question": "下面西门子哪个产品系列对应施耐德LC1D系列：",
+            "answer": [
+            {
+                "code": "A",
+                "content": "3TB"
+            },
+            {
+                "code": "B",
+                "content": "3RT2"
+            },
+            {
+                "code": "C",
+                "content": "3TS"
+            },
+            {
+                "code": "D",
+                "content": "3RT5/6"
+            }]
+        },
+        {
+            "id": 10,
+            "question": "5SY系列（1P+N）紧凑型小型断路器宽度是？",
+            "answer": [
+            {
+                "code": "A",
+                "content": "9mm"
+            },
+            {
+                "code": "B",
+                "content": "18mm"
+            },
+            {
+                "code": "C",
+                "content": "24mm "
+            },
+            {
+                "code": "D",
+                "content": "36mm"
+            }]
+        },
+        {
+            "id": 44,
+            "question": "西门子3TS系列接触器最大到多少A：",
+            "answer": [
+            {
+                "code": "A",
+                "content": "500A"
+            },
+            {
+                "code": "B",
+                "content": "400A"
+            },
+            {
+                "code": "C",
+                "content": "750A"
+            },
+            {
+                "code": "D",
+                "content": "100A"
+            }]
+        },
+        {
+            "id": 16,
+            "question": "5SU9（1P+N）RCBO的剩余动作电流保护方式是",
+            "answer": [
+            {
+                "code": "A",
+                "content": "电子式"
+            },
+            {
+                "code": "B",
+                "content": "电磁式"
+            },
+            {
+                "code": "C",
+                "content": "机械式"
+            }]
+        }]
+    },
+    {
+        "type": "B",
+        "question": [
+        {
+            "id": 23,
+            "question": "5SY系列小型断路器具有什么认证？",
+            "answer": [
+            {
+                "code": "A",
+                "content": "3C认证"
+            },
+            {
+                "code": "B",
+                "content": "VDE认证"
+            },
+            {
+                "code": "C",
+                "content": "UL"
+            },
+            {
+                "code": "D",
+                "content": "CE"
+            }]
+        },
+        {
+            "id": 25,
+            "question": "6KA交流分断能力优先选？",
+            "answer": [
+            {
+                "code": "A",
+                "content": "5SY6"
+            },
+            {
+                "code": "B",
+                "content": "5SY60"
+            },
+            {
+                "code": "C",
+                "content": "5SP4"
+            },
+            {
+                "code": "D",
+                "content": "5SY4"
+            }]
+        },
+        {
+            "id": 50,
+            "question": "3RV6/3RV5 系列断路器的优点有哪些？",
+            "answer": [
+            {
+                "code": "A",
+                "content": "体积紧凑，45mm可保护18.5kW电动机"
+            },
+            {
+                "code": "B",
+                "content": "分断能力高"
+            },
+            {
+                "code": "C",
+                "content": "应用类别广"
+            },
+            {
+                "code": "D",
+                "content": "带远程通讯功能"
+            }]
+        },
+        {
+            "id": 22,
+            "question": "西门子低压终端配电线路保护常用哪些器件？",
+            "answer": [
+            {
+                "code": "A",
+                "content": "熔断器"
+            },
+            {
+                "code": "B",
+                "content": "小型断路器"
+            },
+            {
+                "code": "C",
+                "content": "剩余电流保护器"
+            },
+            {
+                "code": "D",
+                "content": "电涌保护器"
+            }]
+        },
+        {
+            "id": 24,
+            "question": "西门子小型断路器选型所依据的参数有？",
+            "answer": [
+            {
+                "code": "A",
+                "content": "额定分断能力"
+            },
+            {
+                "code": "B",
+                "content": "脱扣特性"
+            },
+            {
+                "code": "C",
+                "content": "额定电流"
+            },
+            {
+                "code": "D",
+                "content": "极数"
+            }]
+        },
+        {
+            "id": 49,
+            "question": "3RV60/3RV50 系列断路器具备那些保护功能",
+            "answer": [
+            {
+                "code": "A",
+                "content": "过载保护"
+            },
+            {
+                "code": "B",
+                "content": "短路保护"
+            },
+            {
+                "code": "C",
+                "content": "缺相保护 "
+            },
+            {
+                "code": "D",
+                "content": "漏电保护"
+            }]
+        }]
+    }]
+}

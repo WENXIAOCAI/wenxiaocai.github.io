@@ -1,0 +1,9 @@
+{
+    "rsp": "succ",
+    "chance": 0,
+    "passimg": null,
+    "abled": "N",
+    "ifpassed": "N",
+    "ifenroll": "Y",
+    "res": "您已用完所有考试次数"
+}
