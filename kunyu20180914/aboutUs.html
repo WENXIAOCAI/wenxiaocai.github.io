@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>坤渔官网-关于我们</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/page.css">
+    <script>
+    function placeholderPic() {
+        var w = document.documentElement.offsetWidth;
+        document.documentElement.style.fontSize = w / 32 + 'px';
+    }
+    placeholderPic();
+    window.onresize = function() {
+        placeholderPic();
+    }
+    </script>
+</head>
+
+<body>
+    <div id="J-wrapper">
+        <div id="J-loading-prev" class="m-loading-prev">
+            <div class="ani">
+                <div class="pace pace-active">
+                    <div class="pace-progress" data-progress-text="99%" data-progress="99" style="transform: translate3d(99.9957%, 0px, 0px);">
+                        <div class="pace-progress-inner"></div>
+                    </div>
+                    <div class="pace-activity">
+                        <svg id="pace-loader-circle" width="100%" height="100%" preserveAspectRatio="xMidYMin meet" viewBox="0 0 100 100">
+                            <path d="M0 0 L100 0 L100 100 L0 100 Z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="pace-logo">
+                    <img src="images/logo-color.png">
+                </div>
+            </div>
+            <div class="pace-loadscreen">
+            </div>
+        </div>
+        <div class="site-header">
+            <div class="header-wrap">
+                <div id="J-siteNav" class="site-nav">
+                    <a class="logo" href="index.html"><img src="images/logo.png" alt=""><h1>坤渔科技</h1></a>
+                    <div id="J-navMod" class="navMod">
+                        <ul class="g-menu">
+                            <li class="cur"><a href="index.html">首页</a></<li></li>
+                            <li><a href="services.html">服务</a></li>
+                            <li><a href="case.html">方案</a></li>
+                            <li><a href="case.html">案例</a></li>
+                            <li><a href="news.html">新闻</a></li>
+                            <li><a href="aboutUs.html">关于</a></li>
+                            <li><a href="contact.html">联系</a></li>
+                        </ul>
+                    </div>
+                    <a id="J-naviBar" class="naviBar">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </a>
+                </div>
+                <div class="m-banner-2 J-scrollCnt">
+                    <p class="en">ABOUT US</p>
+                    <h2>关于我们</h2>
+                    <div id="J-tabHd" class="m-list-tabHd">
+                        <li href="javascript:;">公司简介</li>
+                        <li href="javascript:;">团队优势</li>
+                        <li href="javascript:;">合作伙伴</li>
+                    </div>
+                    <section class="ptb150 vCenterWrapper">
+                        <div class="contactOverlay"></div>
+                        <div class="morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
+                            <button id="contactBtn" class="slide1" type="button" data-hidestatus="0">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" xml:space="preserve">
+                                    <g>
+                                        <path d="M38,16.4L38,16.4c-1.6-1.6-4.1-1.6-5.6,0l-1.2,1.2l2.8,2.8l2.8,2.8L38,22C39.5,20.4,39.5,17.9,38,16.4z"></path>
+                                        <polygon points="31.1,17.6 26.6,22.1 15.1,33.7 15,39.3 20.7,39.3 32.2,27.7 36.8,23.2 33.9,20.4  "></polygon>
+                                    </g>
+                                </svg>
+                            </button>
+                            <div class="morph-content">
+                                <div class="content-style-text">
+                                    <div class="close">
+                                        <span id="J-closeMorph" class="icon icon-close">
+                                            <svg width="100%" height="100%" preserveAspectRatio="xMidYMin meet" viewBox="0 0 20 20">
+                                            <polygon class="st0" points="18.5,4.3 15.7,1.5 10,7.2 4.3,1.5 1.5,4.3 7.2,10 1.5,15.7 4.3,18.5 10,12.8 15.7,18.5 18.5,15.7
+                                            12.8,10     "></polygon>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <form class="contactForm">
+                                        <fieldset class="kontaktformular">
+                                            <div class="inputGroup">
+                                                <input id="nameHf" name="name" type="text" maxlength="40" required="">
+                                                <span class="inputBar"></span>
+                                                <label for="name">姓名<sup>*</sup></label>
+                                            </div>
+                                            <div class="inputGroup">
+                                                <input id="emailHf" name="email" type="email" maxlength="40" required="">
+                                                <span class="inputBar"></span>
+                                                <label for="email">邮件<sup>*</sup></label>
+                                            </div>
+                                            <div class="inputGroup">
+                                                <input id="telHf" name="phone" type="text" maxlength="40">
+                                                <span class="inputBar"></span>
+                                                <label for="tel">电话</label>
+                                            </div>
+                                            <div class="inputGroup">
+                                                <textarea id="nachrichtHf" name="text" rows="7" maxlength="400" required=""></textarea>
+                                                <span class="inputBar"></span>
+                                                <label for="nachricht">留言<sup>*</sup></label>
+                                            </div>
+                                            <a class="u-btn" href="javascript:;">提交</a>
+                                            <div class="contactformWarning">
+                                                <p></p>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div id="J-tabCnt">
+            <div class="list J-cnt cur">
+                <div class="g-article g-article3 g-article3-about J-scrollCnt">
+                    <div class="wrap">
+                        <div class="m-section-col m-section-col-3">
+                            <div class="cnt">
+                                <div class="u-hd u-hd-2">
+                                    <h2>公司简介</h2>
+                                </div>
+                                <p class="txt">坤渔科技多年以来专业从事定制开发和技术支持服务，为客户提供“创新技术 + 系统定制 +互联网形象策划 + 产业孵化 + 系统解决方案”的全方位、一站式互联网服务。是一家以专业的技术实力、长远的发展战略眼光及诚信可靠的工作态度，怀揣与企业共同成长的理念来发展企业的创新型全方位互联网企业。</p>
+                                <p class="txt">坤渔科技坚持以匠心品质真诚服务的服务至上理念，为需求企业创造价值、提升企业价值为己任的企业宗旨陪伴需求企业而行。坤渔科技重视员工利益，激发员工潜能，在企业价值观最大化的前提下追求员工与企业成长的最大化。通过成熟有效的营销、管理机制，实现企业的健康、持续的利益增长，并赋予需求企业丰厚的投资价值回报。</p>
+                                <p class="txt">经过多年的发展，坤渔科技积累了众多不同行业的经验，不断的创新，使我们专业的服务水准得到行业内外的认可，并受到众多客户的赞誉。坤渔科技秉承交流与进取、合作与发展、高效与创新原则，与所有合作伙伴一起成长，分享成功的喜悦。并将关爱社会，回馈社会，以身作则，推动互联网行业的健康发展。</p>
+                            </div>
+                            <div class="pic">
+                                <img class="pic1" src="images/about1.jpg">
+                                <img class="pic2" src="images/about2.jpg">
+                                <img class="pic3" src="images/about3.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="g-article g-article2 J-scrollCnt">
+                    <div class="wrap">
+                        <div class="m-section-col m-section-col-2 m-section-col-adv">
+                            <div class="pic J-iconScroll">
+                                <div class="logo-about">
+                                    <img src="images/aboutUs2.png">
+                                </div>
+                                <svg class="animatedSvg3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" class="animatedSvg" x="0px" y="0px" viewBox="0 0 800 800" xml:space="preserve">
+                                    <g>
+                                        <path d="M278.26,329.71c24.31-42.01,69.71-70.3,121.74-70.3V48.53c-130.08,0-243.65,70.67-304.43,175.71" />
+                                        <path d="M277.65,469.22c-11.59-20.44-18.24-44.05-18.24-69.22c0-25.61,6.88-49.6,18.85-70.29l-69.3-40.01l-16.17-32.96   l-37.47,1.99l-59.75-34.49C65.66,275.94,48.53,335.97,48.53,400s17.13,124.06,47.05,175.76" />
+                                        <path d="M400,540.59c-52.03,0-97.43-28.29-121.74-70.3l-69.21,39.96l-36.14,0.75l-17.5,30.22l-59.84,34.55   C156.35,680.8,269.92,751.47,400,751.47" />
+                                        <path d="M521.74,470.29c-24.31,42.01-69.71,70.3-121.74,70.3v78.89l-19.21,31.47L400,681.59v69.88   c130.08,0,243.65-70.67,304.43-175.71" />
+                                        <path d="M521.74,329.71c11.97,20.68,18.85,44.67,18.85,70.29s-6.88,49.6-18.85,70.29l69.32,40.02l16.64,32.98   l36.37-2.37l60.36,34.85c29.92-51.7,47.05-111.73,47.05-175.76s-17.13-124.06-47.05-175.76" />
+                                        <path d="M521.74,329.71l67.74-39.84l38.92,1.66l15.75-32.49l60.27-34.8C643.65,119.2,530.08,48.53,400,48.53v210.88   C452.03,259.41,497.43,287.7,521.74,329.71z" />
+                                        <g>
+                                            <g>
+                                                <ellipse transform="matrix(0.152 -0.9884 0.9884 0.152 180.5258 952.4027)" cx="645.29" cy="371" rx="21.82" ry="21.82" />
+                                                <path d="M626.49,382.12l-19.4,16.38c-1.51,1.28-1.72,3.53-0.46,5.06l0,0c1.29,1.57,3.61,1.77,5.15,0.45l19.16-16.48" />
+                                            </g>
+                                            <polyline points="669.18,400.26 669.18,434.58 599.6,434.58 599.6,381.64 615.44,381.64   " />
+                                            <polyline points="687.83,374.71 644.74,415 629.08,401.38 599.96,434.04   " />
+                                            <polyline points="676.08,373.78 688.58,373.78 688.76,385.15   " />
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path d="M528.2,629.53l0.03,7.01h-23.6l0.03-7.01c-11.98-4.69-20.43-16.44-20.43-30.08c0-17.78,14.41-32.2,32.2-32.2c17.78,0,32.2,14.41,32.2,32.2C548.63,613.1,540.18,624.84,528.2,629.53z" />
+                                                <line x1="504.1" y1="642.35" x2="528.76" y2="642.35" />
+                                                <line x1="506.67" y1="648.74" x2="526.19" y2="648.74" />
+                                            </g>
+                                            <polyline points="495.14,608.94 503.66,597.23 516.28,609.78 527.79,596.16 537.72,607.34" />
+                                        </g>
+                                        <g>
+                                            <line x1="154.66" y1="388.63" x2="166.87" y2="411.55" />
+                                            <line x1="162.79" y1="413.6" x2="171.07" y2="409.19" />
+                                            <polygon points="178.79,416.94 183.64,426.03 170.01,433.3 165.16,424.2 151.96,434.62 154.78,388.57 196.67,410.78" />
+                                            <line x1="172.16" y1="437.95" x2="186.17" y2="430.49" />
+                                        </g>
+                                        <path d="M124.13,431.09c0-37.83,27.94-68.44,62.48-68.44h-73.74" />
+                                        <rect x="118.47" y="424.69" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 554.8404 306.2239)" width="11.69" height="11.69" />
+                                        <rect x="180.26" y="357" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 548.95 176.7409)" width="11.69" height="11.69" />
+                                        <line x1="112.47" y1="354.25" x2="112.47" y2="370.95" />
+                                        <g>
+                                            <polyline points="246.28,202.92 242.48,202.92 242.48,164.77 321.74,164.77 321.74,202.92 318.58,202.92" />
+                                            <polyline points="305.29,186.73 315.16,213.34 249.06,213.34 257.22,186.73" />
+                                            <polyline points="259.42,164.56 259.42,155.17 304.8,155.17 304.8,164.56" />
+                                            <line x1="250.5" y1="186.5" x2="313.72" y2="186.5" />
+                                            <line x1="313.04" y1="175.41" x2="303.13" y2="175.41" />
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <circle cx="526.17" cy="186.66" r="22.24" />
+                                                <circle cx="526.17" cy="186.66" r="38.54" />
+                                                <circle cx="526.17" cy="186.66" r="5.42" />
+                                                <line x1="526.17" y1="186.66" x2="572.13" y2="157.01" />
+                                            </g>
+                                            <polyline points="562.24,154.05 561.91,163.27 570.15,166.9   " />
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path d="M292.97,616.5l-38.98-39.67l-3.84-13.81l13.41,4.43l38.98,39.67l0,0c1.09,5.26-3.26,10.06-8.6,9.48     L292.97,616.5z" />
+                                                <polyline points="253.99,576.82 258.98,571.93 274.99,588.06    " />
+                                                <line x1="289.08" y1="612.36" x2="293.99" y2="607.45" />
+                                            </g>
+                                            <g>
+                                                <polyline points="283.64,579.2 309.88,579.2 309.88,635.58 225.67,635.58 225.67,579.2 246.41,579.2" />
+                                                <g>
+                                                    <polyline points="262.35,635.58 262.35,646.89 254.76,646.89" />
+                                                    <polyline points="273.2,635.83 273.2,647.14 280.79,647.14" />
+                                                </g>
+                                                <line x1="236.29" y1="627.99" x2="309.66" y2="627.99" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="cnt">
+                                <div class="u-hd u-hd-2">
+                                    <h2>团队优势</h2>
+                                </div>
+                                <p class="txt">在技术开发领域，坤渔科技具有10+的实战开发经验，擅长敏捷开发，并且注重代码精简与优化，领先的数据处理平台架构设计，基于BI（商业智能）平台的强大后台数据整合技术优势，实现多维多角度查询，为用户提供更灵活、多层面的深度分析能力的技术优势。 在信息的储存方面，坤渔科技采用先进的云服务器存储，数据储存更加安全，比起全国各地的老旧的服务器机房而言，数据更加安全（机房类服务器，硬盘一旦损坏，数据将全部丢失，机房一旦停电，将影响网站正常运行，出现网站打不开的情况），数据读取也更加敏捷，网站浏览速度明显比其他企业建站快速。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="g-article J-scrollCnt">
+                    <div class="u-hd">
+                        <h2>合作伙伴</h2>
+                    </div>
+                    <ul class="m-partner2 J-scrollCnt wrap">
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list J-cnt">
+                <div class="g-article g-article3 J-scrollCnt">
+                    <div class="wrap">
+                        <div class="m-section-col m-section-col-3">
+                            <div class="cnt">
+                                <div class="u-hd u-hd-2">
+                                    <h2>公司简介</h2>
+                                </div>
+                                <p class="txt">坤渔科技多年以来专业从事定制开发和技术支持服务，为客户提供“创新技术 + 系统定制 +互联网形象策划 + 产业孵化 + 系统解决方案”的全方位、一站式互联网服务。是一家以专业的技术实力、长远的发展战略眼光及诚信可靠的工作态度，怀揣与企业共同成长的理念来发展企业的创新型全方位互联网企业。</p>
+                                <p class="txt">坤渔科技坚持以匠心品质真诚服务的服务至上理念，为需求企业创造价值、提升企业价值为己任的企业宗旨陪伴需求企业而行。坤渔科技重视员工利益，激发员工潜能，在企业价值观最大化的前提下追求员工与企业成长的最大化。通过成熟有效的营销、管理机制，实现企业的健康、持续的利益增长，并赋予需求企业丰厚的投资价值回报。</p>
+                                <p class="txt">经过多年的发展，坤渔科技积累了众多不同行业的经验，不断的创新，使我们专业的服务水准得到行业内外的认可，并受到众多客户的赞誉。坤渔科技秉承交流与进取、合作与发展、高效与创新原则，与所有合作伙伴一起成长，分享成功的喜悦。并将关爱社会，回馈社会，以身作则，推动互联网行业的健康发展。</p>
+                            </div>
+                            <div class="pic">
+                                <img class="pic1" src="images/about1.jpg">
+                                <img class="pic2" src="images/about2.jpg">
+                                <img class="pic3" src="images/about3.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="g-article g-article2 J-scrollCnt">
+                    <div class="wrap">
+                        <div class="m-section-col m-section-col-2 m-section-col-adv">
+                            <div class="pic">
+                                <img class="pic1" src="images/about4.jpg">
+                            </div>
+                            <div class="cnt">
+                                <div class="u-hd u-hd-2">
+                                    <h2>团队优势</h2>
+                                </div>
+                                <p class="txt">在技术开发领域，坤渔科技具有10+的实战开发经验，擅长敏捷开发，并且注重代码精简与优化，领先的数据处理平台架构设计，基于BI（商业智能）平台的强大后台数据整合技术优势，实现多维多角度查询，为用户提供更灵活、多层面的深度分析能力的技术优势。 在信息的储存方面，坤渔科技采用先进的云服务器存储，数据储存更加安全，比起全国各地的老旧的服务器机房而言，数据更加安全（机房类服务器，硬盘一旦损坏，数据将全部丢失，机房一旦停电，将影响网站正常运行，出现网站打不开的情况），数据读取也更加敏捷，网站浏览速度明显比其他企业建站快速。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="g-article J-scrollCnt">
+                    <div class="u-hd">
+                        <h2>合作伙伴</h2>
+                    </div>
+                    <ul class="m-partner2 J-scrollCnt wrap">
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                    </ul>
+                </div>
+                2
+            </div>
+            <div class="list J-cnt">
+                <div class="g-article g-article3 J-scrollCnt">
+                    <div class="wrap">
+                        <div class="m-section-col m-section-col-3">
+                            <div class="cnt">
+                                <div class="u-hd u-hd-2">
+                                    <h2>公司简介</h2>
+                                </div>
+                                <p class="txt">坤渔科技多年以来专业从事定制开发和技术支持服务，为客户提供“创新技术 + 系统定制 +互联网形象策划 + 产业孵化 + 系统解决方案”的全方位、一站式互联网服务。是一家以专业的技术实力、长远的发展战略眼光及诚信可靠的工作态度，怀揣与企业共同成长的理念来发展企业的创新型全方位互联网企业。</p>
+                                <p class="txt">坤渔科技坚持以匠心品质真诚服务的服务至上理念，为需求企业创造价值、提升企业价值为己任的企业宗旨陪伴需求企业而行。坤渔科技重视员工利益，激发员工潜能，在企业价值观最大化的前提下追求员工与企业成长的最大化。通过成熟有效的营销、管理机制，实现企业的健康、持续的利益增长，并赋予需求企业丰厚的投资价值回报。</p>
+                                <p class="txt">经过多年的发展，坤渔科技积累了众多不同行业的经验，不断的创新，使我们专业的服务水准得到行业内外的认可，并受到众多客户的赞誉。坤渔科技秉承交流与进取、合作与发展、高效与创新原则，与所有合作伙伴一起成长，分享成功的喜悦。并将关爱社会，回馈社会，以身作则，推动互联网行业的健康发展。</p>
+                            </div>
+                            <div class="pic">
+                                <img class="pic1" src="images/about1.jpg">
+                                <img class="pic2" src="images/about2.jpg">
+                                <img class="pic3" src="images/about3.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="g-article g-article2 J-scrollCnt">
+                    <div class="wrap">
+                        <div class="m-section-col m-section-col-2 m-section-col-adv">
+                            <div class="pic">
+                                <img class="pic1" src="images/about4.jpg">
+                            </div>
+                            <div class="cnt">
+                                <div class="u-hd u-hd-2">
+                                    <h2>团队优势</h2>
+                                </div>
+                                <p class="txt">在技术开发领域，坤渔科技具有10+的实战开发经验，擅长敏捷开发，并且注重代码精简与优化，领先的数据处理平台架构设计，基于BI（商业智能）平台的强大后台数据整合技术优势，实现多维多角度查询，为用户提供更灵活、多层面的深度分析能力的技术优势。 在信息的储存方面，坤渔科技采用先进的云服务器存储，数据储存更加安全，比起全国各地的老旧的服务器机房而言，数据更加安全（机房类服务器，硬盘一旦损坏，数据将全部丢失，机房一旦停电，将影响网站正常运行，出现网站打不开的情况），数据读取也更加敏捷，网站浏览速度明显比其他企业建站快速。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="g-article J-scrollCnt">
+                    <div class="u-hd">
+                        <h2>合作伙伴</h2>
+                    </div>
+                    <ul class="m-partner2 J-scrollCnt wrap">
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                        <img src="images/solution-partners-logo.png">
+                    </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="wrap">
+                <div class="mod main fixed">
+                    <img src="images/logo.png" alt="">
+                    <p>北京坤渔科技有限公司是专做网站建设的公司，以专业的定位、长期的眼光及诚信负责的操作，与共同成长的理念来发展公司的事业。</p>
+                </div>
+                <div class="mod">
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd>
+                            <a href="javascript:;">公司介绍</a>
+                            <a href="javascript:;">团队优势</a>
+                            <a href="javascript:;">合作伙伴</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="mod">
+                    <dl>
+                        <dt>服务</dt>
+                        <dd>
+                            <a href="javascript:;">高端网站建设</a>
+                            <a href="javascript:;">APP开发</a>
+                            <a href="javascript:;">网站代运营</a>
+                            <a href="javascript:;">电商网站</a>
+                            <a href="javascript:;">H5自适应</a>
+                            <a href="javascript:;">门户网站</a>
+                            <a href="javascript:;">定制系统</a>
+                            <a href="javascript:;">小程序定制</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="mod">
+                    <dl>
+                        <dt>解决方案</dt>
+                        <dd>
+                            <a href="javascript:;">医疗行业</a>
+                            <a href="javascript:;">政府行业</a>
+                            <a href="javascript:;">金融行业</a>
+                            <a href="javascript:;">教育行业</a>
+                            <a href="javascript:;">旅游行业</a>
+                            <a href="javascript:;">网站建设</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="mod">
+                    <dl>
+                        <dt>新闻动态</dt>
+                        <dd>
+                            <a href="javascript:;">行业新闻</a>
+                            <a href="javascript:;">坤渔知识库</a>
+                            <a href="javascript:;">坤渔科技新闻</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="mod">
+                    <dl>
+                        <dt>人才招聘</dt>
+                        <dd>
+                            <a href="javascript:;">技术开发</a>
+                            <a href="javascript:;">销售经理</a>
+                            <a href="javascript:;">UI设计</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-v1.10.2.min.js"></script>
+        <script src="js/common.js"></script>
+</body>
+
+</html>
