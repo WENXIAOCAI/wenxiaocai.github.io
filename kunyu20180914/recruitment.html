@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>坤渔官网-人才招聘</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/page.css">
+    <script>
+    function placeholderPic() {
+        var w = document.documentElement.offsetWidth;
+        document.documentElement.style.fontSize = w / 32 + 'px';
+    }
+    placeholderPic();
+    window.onresize = function() {
+        placeholderPic();
+    }
+    </script>
+</head>
+
+<body>
+    <div id="J-wrapper">
+        <div id="J-loading-prev" class="m-loading-prev">
+            <div class="ani">
+                <div class="pace pace-active">
+                    <div class="pace-progress" data-progress-text="99%" data-progress="99" style="transform: translate3d(99.9957%, 0px, 0px);">
+                        <div class="pace-progress-inner"></div>
+                    </div>
+                    <div class="pace-activity">
+                        <svg id="pace-loader-circle" width="100%" height="100%" preserveAspectRatio="xMidYMin meet" viewBox="0 0 100 100">
+                            <path d="M0 0 L100 0 L100 100 L0 100 Z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="pace-logo">
+                    <img src="images/logo-color.png">
+                </div>
+            </div>
+            <div class="pace-loadscreen">
+            </div>
+        </div>
+        <div class="site-header">
+            <div class="header-wrap">
+                <div id="J-siteNav" class="site-nav">
+                    <a class="logo" href="index.html"><img src="images/logo.png" alt=""><h1>坤渔科技</h1></a>
+                    <div id="J-navMod" class="navMod">
+                        <ul class="g-menu">
+                            <li class="cur"><a href="index.html">首页</a></<li></li>
+                            <li><a href="services.html">服务</a></li>
+                            <li><a href="case.html">方案</a></li>
+                            <li><a href="case.html">案例</a></li>
+                            <li><a href="news.html">新闻</a></li>
+                            <li><a href="aboutUs.html">关于</a></li>
+                            <li><a href="contact.html">联系</a></li>
+                        </ul>
+                    </div>
+                    <a id="J-naviBar" class="naviBar">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </a>
+                </div>
+                <div class="m-banner-2 J-scrollCnt m-banner-2 J-scrollCnt-rec">
+                    <p class="en">TALENT RECRUITMENT</p>
+                    <h2>人才招聘</h2>
+                    <div id="J-tabHd" class="m-list-tabHd">
+                        <li href="javascript:;">全部</li>
+                        <li href="javascript:;">技术开发</li>
+                        <li href="javascript:;">销售经理</li>
+                        <li href="javascript:;">UI设计</li>
+                    </div>
+                    <section class="ptb150 vCenterWrapper">
+                        <div class="contactOverlay"></div>
+                        <div class="morph-button morph-button-modal morph-button-modal-1 morph-button-fixed">
+                            <button id="contactBtn" class="slide1" type="button" data-hidestatus="0">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" xml:space="preserve">
+                                    <g>
+                                        <path d="M38,16.4L38,16.4c-1.6-1.6-4.1-1.6-5.6,0l-1.2,1.2l2.8,2.8l2.8,2.8L38,22C39.5,20.4,39.5,17.9,38,16.4z"></path>
+                                        <polygon points="31.1,17.6 26.6,22.1 15.1,33.7 15,39.3 20.7,39.3 32.2,27.7 36.8,23.2 33.9,20.4  "></polygon>
+                                    </g>
+                                </svg>
+                            </button>
+                            <div class="morph-content">
+                                <div class="content-style-text">
+                                    <div class="close">
+                                        <span id="J-closeMorph" class="icon icon-close">
+                                            <svg width="100%" height="100%" preserveAspectRatio="xMidYMin meet" viewBox="0 0 20 20">
+                                            <polygon class="st0" points="18.5,4.3 15.7,1.5 10,7.2 4.3,1.5 1.5,4.3 7.2,10 1.5,15.7 4.3,18.5 10,12.8 15.7,18.5 18.5,15.7
+                                            12.8,10     "></polygon>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <form class="contactForm">
+                                        <fieldset class="kontaktformular">
+                                            <div class="inputGroup">
+                                                <input id="nameHf" name="name" type="text" maxlength="40" required="">
+                                                <span class="inputBar"></span>
+                                                <label for="name">姓名<sup>*</sup></label>
+                                            </div>
+                                            <div class="inputGroup">
+                                                <input id="emailHf" name="email" type="email" maxlength="40" required="">
+                                                <span class="inputBar"></span>
+                                                <label for="email">邮件<sup>*</sup></label>
+                                            </div>
+                                            <div class="inputGroup">
+                                                <input id="telHf" name="phone" type="text" maxlength="40">
+                                                <span class="inputBar"></span>
+                                                <label for="tel">电话</label>
+                                            </div>
+                                            <div class="inputGroup">
+                                                <textarea id="nachrichtHf" name="text" rows="7" maxlength="400" required=""></textarea>
+                                                <span class="inputBar"></span>
+                                                <label for="nachricht">留言<sup>*</sup></label>
+                                            </div>
+                                            <a class="u-btn" href="javascript:;">提交</a>
+                                            <div class="contactformWarning">
+                                                <p></p>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="m-recruitment">
+                <div class="hd">
+                    <p>您将在坤渔体验与众不同的职业经历，在这里，您将与坤渔共同成长，我们将极力创造员工与坤渔的双赢！在坤渔，我们一起追逐梦想，共同开拓中国互联网事业。习惯与细节，你交给他一件事情他能办好，再交给他一件事情他依旧能办好！</p>
+                    <p>简历投递邮箱：service@net75.com  请注明应聘职位，设计师应聘请携带作品</p>
+                </div>
+                <div id="J-tabCnt">
+                    <div class="list J-cnt cur">
+                        <ul>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon1"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">销售经理</p>
+                                        <p>3人（北京）；负责公司项目等互联网产品的销售</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon2"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">web前端工程师</p>
+                                        <p>3人（北京）；负责Web产品的前端表现层与后端交互的设计和开发</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon3"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">安卓开发工程师</p>
+                                        <p>3人（北京）；精通Android手机平台，对Android底层接口有深入地了解</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon4"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">ios开发工程师</p>
+                                        <p>3人（广州）；从事公司iOS平台应用软件产品的设计、研发工作</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon5"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">UI设计师</p>
+                                        <p>2人（广州）；负责软件界面的美术设计、创意工作和制作工作</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list J-cnt">
+                        <ul>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon1"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">销售经理</p>
+                                        <p>3人（北京）；负责公司项目等互联网产品的销售</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon2"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">web前端工程师</p>
+                                        <p>3人（北京）；负责Web产品的前端表现层与后端交互的设计和开发</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon3"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">安卓开发工程师</p>
+                                        <p>3人（北京）；精通Android手机平台，对Android底层接口有深入地了解</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon4"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">ios开发工程师</p>
+                                        <p>3人（广州）；从事公司iOS平台应用软件产品的设计、研发工作</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon5"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">UI设计师</p>
+                                        <p>2人（广州）；负责软件界面的美术设计、创意工作和制作工作</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list J-cnt">
+                        <ul>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon1"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">销售经理</p>
+                                        <p>3人（北京）；负责公司项目等互联网产品的销售</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon2"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">web前端工程师</p>
+                                        <p>3人（北京）；负责Web产品的前端表现层与后端交互的设计和开发</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon3"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">安卓开发工程师</p>
+                                        <p>3人（北京）；精通Android手机平台，对Android底层接口有深入地了解</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon4"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">ios开发工程师</p>
+                                        <p>3人（广州）；从事公司iOS平台应用软件产品的设计、研发工作</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon5"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">UI设计师</p>
+                                        <p>2人（广州）；负责软件界面的美术设计、创意工作和制作工作</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list J-cnt">
+                        <ul>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon1"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">销售经理</p>
+                                        <p>3人（北京）；负责公司项目等互联网产品的销售</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon2"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">web前端工程师</p>
+                                        <p>3人（北京）；负责Web产品的前端表现层与后端交互的设计和开发</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon3"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">安卓开发工程师</p>
+                                        <p>3人（北京）；精通Android手机平台，对Android底层接口有深入地了解</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon4"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">ios开发工程师</p>
+                                        <p>3人（广州）；从事公司iOS平台应用软件产品的设计、研发工作</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="profile">
+                                    <i class="icon5"></i>
+                                    <div class="txtCnt">
+                                        <p class="tt">UI设计师</p>
+                                        <p>2人（广州）；负责软件界面的美术设计、创意工作和制作工作</p>
+                                    </div>
+                                    <span class="J-toggleRec icon-toggle"></span>
+                                </div>
+                                <div class="detail">
+                                    <p class="mt">岗位职责：</p>
+                                    <p>1、负责Web产品的前端表现层与后端交互的设计和开发，保证页面浏览的兼容性和流畅浏览;</p>
+                                    <p>2、负责Javascript程序模块的开发，通用类库和框架的编写;</p>
+                                    <p>3、负责配合产品经理、后端开发人员实现产品界面;</p>
+                                    <p>4、快速响应产品迭代以及优化升级，持续优化前端体验，并保持良好兼容性，提升友好和易用性;</p>
+                                    <p>5、负责产品的交互界面设计，分析用户的使用习惯和偏好；从用户体验的角度出发，提出最优的界面交互设计方案;</p>
+                                    <p>6、参与产品的原型讨论和整体UE设计，规划产品界面交互设计方案;</p>
+                                    <p class="mt">任职要求：</p>
+                                    <p>1、大专及以上学历，计算机相关专业；</p>
+                                    <p>2、2-3年以上前端开发相关的工作经验，精通HTML、CSS、JavaScript等前端技术，对HTML5和CSS3有一定的编写能力；</p>
+                                    <p>3、熟悉常见页面架构和布局；能快速处理主流浏览器的兼容性问题；</p>
+                                    <p>4、熟悉Jquery、Bootstrap等开发框架，具备快速的编写和修改代码的能力；能灵活使用工具调试代码；</p>
+                                    <p>5、编码遵循w3c标准，有简洁高效、语义化强的前端开发风格；</p>
+                                    <p>6、具备较好的美术基础和审美能力，熟悉当前的设计风格和趋势，对色彩敏感；</p>
+                                    <p>7、对用户体验、交互操作流程及用户需求有深入理解，具备敏锐的用户体验洞察力，能把握不同的设计风格；工作认真，有责任心，踏实可靠，沟通表达能力较好，注重团队合作， 良好的职业操守。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="wrap">
+                <div class="mod main fixed">
+                    <img src="images/logo.png" alt="">
+                    <p>北京坤渔科技有限公司是专做网站建设的公司，以专业的定位、长期的眼光及诚信负责的操作，与共同成长的理念来发展公司的事业。</p>
+                </div>
+                <div class="mod">
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd>
+                            <a href="javascript:;">公司介绍</a>
+                            <a href="javascript:;">团队优势</a>
+                            <a href="javascript:;">合作伙伴</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="mod">
+                    <dl>
+                        <dt>服务</dt>
+                        <dd>
+                            <a href="javascript:;">高端网站建设</a>
+                            <a href="javascript:;">APP开发</a>
+                            <a href="javascript:;">网站代运营</a>
+                            <a href="javascript:;">电商网站</a>
+                            <a href="javascript:;">H5自适应</a>
+                            <a href="javascript:;">门户网站</a>
+                            <a href="javascript:;">定制系统</a>
+                            <a href="javascript:;">小程序定制</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="mod">
+                    <dl>
+                        <dt>解决方案</dt>
+                        <dd>
+                            <a href="javascript:;">医疗行业</a>
+                            <a href="javascript:;">政府行业</a>
+                            <a href="javascript:;">金融行业</a>
+                            <a href="javascript:;">教育行业</a>
+                            <a href="javascript:;">旅游行业</a>
+                            <a href="javascript:;">网站建设</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="mod">
+                    <dl>
+                        <dt>新闻动态</dt>
+                        <dd>
+                            <a href="javascript:;">行业新闻</a>
+                            <a href="javascript:;">坤渔知识库</a>
+                            <a href="javascript:;">坤渔科技新闻</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="mod">
+                    <dl>
+                        <dt>人才招聘</dt>
+                        <dd>
+                            <a href="javascript:;">技术开发</a>
+                            <a href="javascript:;">销售经理</a>
+                            <a href="javascript:;">UI设计</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-v1.10.2.min.js"></script>
+        <script src="js/common.js"></script>
+</body>
+
+</html>
