@@ -3913,16 +3913,6 @@ textarea::-webkit-scrollbar-thumb:window-inactive {
         margin: 0;
         box-sizing: border-box;
         background: #fff;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
         z-index: 999;
         -webkit-transform: translate3d(0,-100%,0);
         -ms-transform: translate3d(0,-100%,0);
