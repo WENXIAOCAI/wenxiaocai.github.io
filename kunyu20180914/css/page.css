@@ -3905,7 +3905,7 @@ textarea::-webkit-scrollbar-thumb:window-inactive {
     }
 
     .site-nav .navMod {
-        position:absolute;
+        position:fixed;
         width: 100%;
         height: 100%;
         left: 0;
